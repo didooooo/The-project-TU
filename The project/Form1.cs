@@ -7,11 +7,13 @@ namespace The_project
         public Form1(string userName)
         {
             InitializeComponent();
+            
             this.BackColor = Color.FromArgb(20, 69, 82);
             sidePanel.BackColor = Color.FromArgb(27, 58, 75);
             showMore.BackColor = Color.FromArgb(27, 58, 75);
             btnExit.Location = new Point(62, Bottom);
             labelName.Text = userName;
+            labelName.ForeColor = Color.White;
            // topPanel.BackColor = Color.FromArgb(20, 69, 83);
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
             this.showLess.Click += new EventHandler(this.showLess_Click);
@@ -36,7 +38,7 @@ namespace The_project
             showLess.BackgroundImage = showMore.BackgroundImage;
             iconProfile.Location = new Point(62, 12);
             sidePanel.Controls.Add(showLess);
-            btnDashboard.Text = "  Dashboard";
+            btnDashboard.Text = "Dashboard";
             btnFavourite.Text = "Favourites";
             btnContactUs.Text = "Contact Us";
             btnReviews.Text = "Reviews";
@@ -70,6 +72,22 @@ namespace The_project
         private void iconProfile_Click(object sender, EventArgs e)
         {
             iconProfile.BackColor=Color.Transparent;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ChoiceForm choiceForm = new ChoiceForm();
+            choiceForm.ShowDialog();
         }
     }
 }
