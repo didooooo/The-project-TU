@@ -12,14 +12,14 @@ namespace The_project
             showMore.BackColor = Color.FromArgb(27, 58, 75);
             btnExit.Location = new Point(62, Bottom);
             labelName.Text = userName;
-           // topPanel.BackColor = Color.FromArgb(20, 69, 83);
+            // topPanel.BackColor = Color.FromArgb(20, 69, 83);
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
             this.showLess.Click += new EventHandler(this.showLess_Click);
-           // this.Cursor += new EventHandler(this.cursorChange_Mouse);
-           // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
+            // this.Cursor += new EventHandler(this.cursorChange_Mouse);
+            // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
         }
 
-      
+
 
         Button showLess = new Button();
         private void showMore_Click(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace The_project
             sidePanel.Size = new Size(300, Bottom);
             showMore.Hide();
             showLess.Show();
-            showLess.Size = new Size(showMore.Size.Width,showMore.Size.Height);
+            showLess.Size = new Size(showMore.Size.Width, showMore.Size.Height);
             labelName.Location = new Point(82, 102);
             showLess.Location = new Point(6, 12);
             showLess.FlatStyle = FlatStyle.Flat;
@@ -69,7 +69,12 @@ namespace The_project
 
         private void iconProfile_Click(object sender, EventArgs e)
         {
-            iconProfile.BackColor=Color.Transparent;
+            iconProfile.BackColor = Color.Transparent;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBox1.CheckState = CheckState.Checked;
         }
     }
 }

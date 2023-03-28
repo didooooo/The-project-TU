@@ -29,158 +29,183 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.showMore = new System.Windows.Forms.Button();
-            this.sidePanel = new System.Windows.Forms.Panel();
-            this.labelName = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnFavourite = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.iconProfile = new System.Windows.Forms.PictureBox();
-            this.sidePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).BeginInit();
-            this.SuspendLayout();
+            showMore = new Button();
+            sidePanel = new Panel();
+            labelName = new Label();
+            btnExit = new Button();
+            btnFavourite = new Button();
+            btnReviews = new Button();
+            btnContactUs = new Button();
+            btnDashboard = new Button();
+            iconProfile = new PictureBox();
+            checkBox1 = new CheckBox();
+            sidePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconProfile).BeginInit();
+            SuspendLayout();
             // 
             // showMore
             // 
-            this.showMore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showMore.BackgroundImage")));
-            this.showMore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.showMore.FlatAppearance.BorderSize = 0;
-            this.showMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showMore.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.showMore.Location = new System.Drawing.Point(6, 12);
-            this.showMore.Name = "showMore";
-            this.showMore.Size = new System.Drawing.Size(36, 34);
-            this.showMore.TabIndex = 2;
-            this.showMore.UseVisualStyleBackColor = true;
-            this.showMore.Click += new System.EventHandler(this.showMore_Click);
+            showMore.BackgroundImage = (Image)resources.GetObject("showMore.BackgroundImage");
+            showMore.BackgroundImageLayout = ImageLayout.Zoom;
+            showMore.FlatAppearance.BorderSize = 0;
+            showMore.FlatStyle = FlatStyle.Flat;
+            showMore.Font = new Font("Showcard Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            showMore.Location = new Point(4, 7);
+            showMore.Margin = new Padding(2);
+            showMore.Name = "showMore";
+            showMore.Size = new Size(25, 20);
+            showMore.TabIndex = 2;
+            showMore.UseVisualStyleBackColor = true;
+            showMore.Click += showMore_Click;
             // 
             // sidePanel
             // 
-            this.sidePanel.BackColor = System.Drawing.Color.Coral;
-            this.sidePanel.Controls.Add(this.labelName);
-            this.sidePanel.Controls.Add(this.btnExit);
-            this.sidePanel.Controls.Add(this.btnFavourite);
-            this.sidePanel.Controls.Add(this.btnReviews);
-            this.sidePanel.Controls.Add(this.btnContactUs);
-            this.sidePanel.Controls.Add(this.btnDashboard);
-            this.sidePanel.Controls.Add(this.iconProfile);
-            this.sidePanel.Controls.Add(this.showMore);
-            this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(214, 513);
-            this.sidePanel.TabIndex = 3;
+            sidePanel.BackColor = Color.Coral;
+            sidePanel.Controls.Add(labelName);
+            sidePanel.Controls.Add(btnExit);
+            sidePanel.Controls.Add(btnFavourite);
+            sidePanel.Controls.Add(btnReviews);
+            sidePanel.Controls.Add(btnContactUs);
+            sidePanel.Controls.Add(btnDashboard);
+            sidePanel.Controls.Add(iconProfile);
+            sidePanel.Controls.Add(showMore);
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Location = new Point(0, 0);
+            sidePanel.Margin = new Padding(2);
+            sidePanel.Name = "sidePanel";
+            sidePanel.Size = new Size(150, 308);
+            sidePanel.TabIndex = 3;
             // 
             // labelName
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(42, 102);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(0, 25);
-            this.labelName.TabIndex = 9;
+            labelName.AutoSize = true;
+            labelName.Location = new Point(29, 61);
+            labelName.Margin = new Padding(2, 0, 2, 0);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(0, 15);
+            labelName.TabIndex = 9;
             // 
             // btnExit
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.Location = new System.Drawing.Point(62, 419);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(55, 51);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnExit.UseVisualStyleBackColor = true;
+            btnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExit.Image = Properties.Resources.dashboard;
+            btnExit.ImageAlign = ContentAlignment.MiddleRight;
+            btnExit.Location = new Point(43, 251);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(38, 31);
+            btnExit.TabIndex = 8;
+            btnExit.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // btnFavourite
             // 
-            this.btnFavourite.FlatAppearance.BorderSize = 0;
-            this.btnFavourite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFavourite.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFavourite.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnFavourite.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFavourite.Location = new System.Drawing.Point(62, 259);
-            this.btnFavourite.Name = "btnFavourite";
-            this.btnFavourite.Size = new System.Drawing.Size(55, 51);
-            this.btnFavourite.TabIndex = 7;
-            this.btnFavourite.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnFavourite.UseVisualStyleBackColor = true;
+            btnFavourite.FlatAppearance.BorderSize = 0;
+            btnFavourite.FlatStyle = FlatStyle.Flat;
+            btnFavourite.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnFavourite.Image = Properties.Resources.dashboard;
+            btnFavourite.ImageAlign = ContentAlignment.MiddleRight;
+            btnFavourite.Location = new Point(43, 155);
+            btnFavourite.Margin = new Padding(2);
+            btnFavourite.Name = "btnFavourite";
+            btnFavourite.Size = new Size(38, 31);
+            btnFavourite.TabIndex = 7;
+            btnFavourite.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnFavourite.UseVisualStyleBackColor = true;
             // 
             // btnReviews
             // 
-            this.btnReviews.FlatAppearance.BorderSize = 0;
-            this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReviews.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReviews.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReviews.Location = new System.Drawing.Point(62, 202);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(55, 51);
-            this.btnReviews.TabIndex = 6;
-            this.btnReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnReviews.UseVisualStyleBackColor = true;
+            btnReviews.FlatAppearance.BorderSize = 0;
+            btnReviews.FlatStyle = FlatStyle.Flat;
+            btnReviews.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReviews.Image = Properties.Resources.dashboard;
+            btnReviews.ImageAlign = ContentAlignment.MiddleRight;
+            btnReviews.Location = new Point(43, 121);
+            btnReviews.Margin = new Padding(2);
+            btnReviews.Name = "btnReviews";
+            btnReviews.Size = new Size(38, 31);
+            btnReviews.TabIndex = 6;
+            btnReviews.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnReviews.UseVisualStyleBackColor = true;
             // 
             // btnContactUs
             // 
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnContactUs.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnContactUs.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnContactUs.Location = new System.Drawing.Point(62, 316);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(55, 51);
-            this.btnContactUs.TabIndex = 5;
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnContactUs.UseVisualStyleBackColor = true;
+            btnContactUs.FlatAppearance.BorderSize = 0;
+            btnContactUs.FlatStyle = FlatStyle.Flat;
+            btnContactUs.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnContactUs.Image = Properties.Resources.dashboard;
+            btnContactUs.ImageAlign = ContentAlignment.MiddleRight;
+            btnContactUs.Location = new Point(43, 190);
+            btnContactUs.Margin = new Padding(2);
+            btnContactUs.Name = "btnContactUs";
+            btnContactUs.Size = new Size(38, 31);
+            btnContactUs.TabIndex = 5;
+            btnContactUs.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnContactUs.UseVisualStyleBackColor = true;
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.Location = new System.Drawing.Point(62, 132);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(55, 51);
-            this.btnDashboard.TabIndex = 4;
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Cursor = Cursors.Hand;
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Image = Properties.Resources.dashboard;
+            btnDashboard.ImageAlign = ContentAlignment.MiddleRight;
+            btnDashboard.Location = new Point(43, 79);
+            btnDashboard.Margin = new Padding(2);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(38, 31);
+            btnDashboard.TabIndex = 4;
+            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDashboard.UseVisualStyleBackColor = true;
             // 
             // iconProfile
             // 
-            this.iconProfile.ErrorImage = null;
-            this.iconProfile.Image = global::The_project.Properties.Resources.user__1_;
-            this.iconProfile.InitialImage = null;
-            this.iconProfile.Location = new System.Drawing.Point(62, 12);
-            this.iconProfile.Name = "iconProfile";
-            this.iconProfile.Size = new System.Drawing.Size(98, 87);
-            this.iconProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconProfile.TabIndex = 3;
-            this.iconProfile.TabStop = false;
-            this.iconProfile.Click += new System.EventHandler(this.iconProfile_Click);
+            iconProfile.ErrorImage = null;
+            iconProfile.Image = Properties.Resources.user__1_;
+            iconProfile.InitialImage = null;
+            iconProfile.Location = new Point(43, 7);
+            iconProfile.Margin = new Padding(2);
+            iconProfile.Name = "iconProfile";
+            iconProfile.Size = new Size(69, 52);
+            iconProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            iconProfile.TabIndex = 3;
+            iconProfile.TabStop = false;
+            iconProfile.Click += iconProfile_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Checked = true;
+            checkBox1.CheckState = CheckState.Checked;
+            checkBox1.Location = new Point(266, 79);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(83, 19);
+            checkBox1.TabIndex = 4;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(902, 513);
-            this.Controls.Add(this.sidePanel);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.sidePanel.ResumeLayout(false);
-            this.sidePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
+            ClientSize = new Size(631, 308);
+            Controls.Add(checkBox1);
+            Controls.Add(sidePanel);
+            Margin = new Padding(2);
+            Name = "Form1";
+            Text = "Form1";
+            sidePanel.ResumeLayout(false);
+            sidePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconProfile).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -193,5 +218,6 @@
         private Button btnReviews;
         private Button btnContactUs;
         private Label labelName;
+        private CheckBox checkBox1;
     }
 }
