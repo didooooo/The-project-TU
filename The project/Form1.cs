@@ -7,7 +7,7 @@ namespace The_project
         public Form1(string userName)
         {
             InitializeComponent();
-            
+            this.Size = new Size(1024, 720);
             this.BackColor = Color.FromArgb(20, 69, 82);
             sidePanel.BackColor = Color.FromArgb(27, 58, 75);
             showMore.BackColor = Color.FromArgb(27, 58, 75);
@@ -86,8 +86,14 @@ namespace The_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ChoiceForm choiceForm = new ChoiceForm();
-            choiceForm.ShowDialog();
+            pnlMenu.Hide();
+            pnlByCh.Show();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -47,12 +47,21 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCompare = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlByCh = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textiTime = new System.Windows.Forms.TextBox();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textiBudgi = new System.Windows.Forms.TextBox();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
+            this.pnlByCh.SuspendLayout();
             this.SuspendLayout();
             // 
             // showMore
@@ -190,7 +199,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(293, 110);
+            this.panel1.Location = new System.Drawing.Point(59, 16);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(228, 116);
             this.panel1.TabIndex = 4;
@@ -208,7 +217,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(577, 110);
+            this.panel2.Location = new System.Drawing.Point(343, 16);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(228, 116);
             this.panel2.TabIndex = 5;
@@ -226,7 +235,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnRandom);
-            this.panel3.Location = new System.Drawing.Point(293, 285);
+            this.panel3.Location = new System.Drawing.Point(59, 191);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(228, 116);
             this.panel3.TabIndex = 5;
@@ -243,7 +252,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btnCompare);
-            this.panel4.Location = new System.Drawing.Point(577, 285);
+            this.panel4.Location = new System.Drawing.Point(343, 191);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(228, 116);
             this.panel4.TabIndex = 5;
@@ -267,6 +276,72 @@
             this.label1.Text = "Choose your destination";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pnlMenu
+            // 
+            this.pnlMenu.Controls.Add(this.panel4);
+            this.pnlMenu.Controls.Add(this.panel3);
+            this.pnlMenu.Controls.Add(this.panel2);
+            this.pnlMenu.Controls.Add(this.panel1);
+            this.pnlMenu.Location = new System.Drawing.Point(3, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(637, 376);
+            this.pnlMenu.TabIndex = 6;
+            // 
+            // pnlByCh
+            // 
+            this.pnlByCh.Controls.Add(this.pnlMenu);
+            this.pnlByCh.Controls.Add(this.label3);
+            this.pnlByCh.Controls.Add(this.textiTime);
+            this.pnlByCh.Controls.Add(this.btnNext);
+            this.pnlByCh.Controls.Add(this.label2);
+            this.pnlByCh.Controls.Add(this.textiBudgi);
+            this.pnlByCh.Location = new System.Drawing.Point(247, 102);
+            this.pnlByCh.Name = "pnlByCh";
+            this.pnlByCh.Size = new System.Drawing.Size(643, 376);
+            this.pnlByCh.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(159, 163);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Time";
+            // 
+            // textiTime
+            // 
+            this.textiTime.Location = new System.Drawing.Point(159, 194);
+            this.textiTime.Name = "textiTime";
+            this.textiTime.Size = new System.Drawing.Size(250, 31);
+            this.textiTime.TabIndex = 3;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(459, 313);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(155, 49);
+            this.btnNext.TabIndex = 2;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(159, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Budget";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textiBudgi
+            // 
+            this.textiBudgi.Location = new System.Drawing.Point(159, 66);
+            this.textiBudgi.Name = "textiBudgi";
+            this.textiBudgi.Size = new System.Drawing.Size(246, 31);
+            this.textiBudgi.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -274,11 +349,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(902, 513);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidePanel);
+            this.Controls.Add(this.pnlByCh);
             this.Name = "Form1";
             this.Text = "Form1";
             this.sidePanel.ResumeLayout(false);
@@ -288,6 +360,9 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlByCh.ResumeLayout(false);
+            this.pnlByCh.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +387,12 @@
         private Button button2;
         private Button btnRandom;
         private Button btnCompare;
+        private Panel pnlMenu;
+        private Panel pnlByCh;
+        private Label label2;
+        private TextBox textiBudgi;
+        private Button btnNext;
+        private Label label3;
+        private TextBox textiTime;
     }
 }
