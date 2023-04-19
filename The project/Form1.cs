@@ -1,9 +1,11 @@
+using System.Diagnostics.SymbolStore;
 using System.Reflection;
 
 namespace The_project
 {
     public partial class Form1 : Form
     {
+        List<Panel> pnlBych = new List<Panel>();
         public Form1(string userName)
         {
             InitializeComponent();
@@ -12,6 +14,7 @@ namespace The_project
             showMore.BackColor = Color.FromArgb(27, 58, 75);
             btnExit.Location = new Point(62, Bottom);
             labelName.Text = userName;
+            labelName.ForeColor = Color.White;
             // topPanel.BackColor = Color.FromArgb(20, 69, 83);
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
             this.showLess.Click += new EventHandler(this.showLess_Click);
@@ -74,7 +77,76 @@ namespace The_project
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            checkBox1.CheckState = CheckState.Checked;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Hide();
+            pnlMenu.Hide();
+            pnlByCh.Show();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            label1.Show();
+            pnlMenu.Show();
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            pnlByCh.Hide();
+            pnlByChoiceNxt.Show();
+        }
+
+        private void btnPrev2_Click(object sender, EventArgs e)
+        {
+            pnlByCh.Show();
+        }
+
+        private void chCulture_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chCulture.Checked)
+            {
+                cmbCulture.Visible = true;
+            }
+            else
+            { cmbCulture.Visible = false; }
+        }
+
+        private void chSport_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chSport.Checked)
+            {
+                cmbSport.Visible = true;
+            }
+            else { cmbSport.Visible = false; }
+        }
+
+        private void chEntertainment_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chEntertainment.Checked)
+            {
+                cmbEntertainment.Visible = true;
+            }
+            else cmbEntertainment.Visible = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = trcDur.Value.ToString();
         }
     }
 }
