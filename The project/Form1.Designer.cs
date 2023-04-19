@@ -308,7 +308,6 @@
             label1.Size = new Size(136, 15);
             label1.TabIndex = 0;
             label1.Text = "Choose your destination";
-            label1.Click += label1_Click;
             // 
             // pnlMenu
             // 
@@ -316,7 +315,7 @@
             pnlMenu.Controls.Add(panel3);
             pnlMenu.Controls.Add(panel2);
             pnlMenu.Controls.Add(panel1);
-            pnlMenu.Location = new Point(186, 334);
+            pnlMenu.Location = new Point(173, 77);
             pnlMenu.Margin = new Padding(2);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(446, 226);
@@ -354,7 +353,6 @@
             trcDur.Size = new Size(104, 45);
             trcDur.TabIndex = 6;
             trcDur.Value = 1;
-            trcDur.Scroll += trcDur_Scroll;
             // 
             // btnPrev
             // 
@@ -399,7 +397,7 @@
             label2.Text = "Budget";
             label2.Click += label2_Click;
             // 
-            // checkBox1
+            // textiBudgi
             // 
             textiBudgi.Location = new Point(111, 40);
             textiBudgi.Margin = new Padding(2);
