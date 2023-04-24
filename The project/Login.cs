@@ -16,6 +16,7 @@ namespace The_project
         public Login()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             signUpPanel.Visible = false;
             loginPanel.Visible = false;
             signUpPanel.BackColor = Color.FromArgb(27, 58, 75);

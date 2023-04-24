@@ -7,6 +7,7 @@ namespace The_project
         public Form1(string userName)
         {
             InitializeComponent();
+            this.FormBorderStyle=FormBorderStyle.FixedToolWindow;
             this.Size = new Size(1024, 720);
             this.BackColor = Color.FromArgb(20, 69, 82);
             sidePanel.BackColor = Color.FromArgb(27, 58, 75);
@@ -24,6 +25,7 @@ namespace The_project
       
 
         Button showLess = new Button();
+
         private void showMore_Click(object sender, EventArgs e)
         {
             sidePanel.Size = new Size(300, Bottom);
@@ -74,26 +76,60 @@ namespace The_project
             iconProfile.BackColor=Color.Transparent;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             pnlMenu.Hide();
-            pnlByCh.Show();
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnRandom_Click(object sender, EventArgs e)
         {
+            pnlRandom.Show();
+            pnlMenu.Hide();
+       }
 
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            btnAccept.Visible = true;
+        }
+
+        private void btnBackG_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Show();
+            pnlRandom.Hide();
+        }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your destination is ");
+            pnlRandom.Hide();
+            pnlMenu.Show();
+        }
+
+        private void btnComparee_Click(object sender, EventArgs e)
+        {
+            combOneC.Location = new Point(118, 43);
+            combSecondC.Location = new Point(479, 43);
+            btnComparee.Location = new Point(284, 482);
+            dataOneC.Visible = true;
+            dataSecondC.Visible = true;
+        }
+
+        private void btnCompare_Click(object sender, EventArgs e)
+        {
+            pnlCompare.Visible = true;
+            pnlMenu.Visible = false;
+        }
+
+        private void btnBackC_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Visible = true;
+            pnlCompare.Visible = false;
+            combOneC.Location = new Point(118,207);
+            combSecondC.Location = new Point(479,207);
+            btnComparee.Location = new Point(284,318);
+            dataOneC.Visible = false;
+            dataSecondC.Visible = false;
         }
     }
 }
