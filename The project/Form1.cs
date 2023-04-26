@@ -79,6 +79,7 @@ namespace The_project
         private void button1_Click(object sender, EventArgs e)
         {
             pnlMenu.Hide();
+            pnlByCh.Visible = true;
 
         }
 
@@ -130,6 +131,42 @@ namespace The_project
             btnComparee.Location = new Point(284,318);
             dataOneC.Visible = false;
             dataSecondC.Visible = false;
+        }
+
+        private void pnlByCh_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBoxBudget.Text=trackBarBudget.Value.ToString();
+            textBoxBudget.Text+=" lv";
+            textBoxDays.Text = trackBarDays.Value.ToString();
+            if (trackBarDays.Value.ToString() == "1")
+            {
+                textBoxDays.Text += " day";
+            }
+            else
+            {
+                textBoxDays.Text += " days";
+            }
+            if (radioButtonWarm.Checked==true)
+            {
+                checkBoxSports.Text = "Skiing/Snowboarding";
+            }
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Show();
+            pnlByCh.Visible = false;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            pnlByChoice2.Visible = true;
+            pnlByCh.Visible=false;
         }
     }
 }

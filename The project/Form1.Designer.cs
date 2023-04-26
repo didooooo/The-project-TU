@@ -60,6 +60,27 @@
             this.combOneC = new System.Windows.Forms.ComboBox();
             this.btnComparee = new System.Windows.Forms.Button();
             this.btnBackC = new System.Windows.Forms.Button();
+            this.pnlByCh = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxDays = new System.Windows.Forms.TextBox();
+            this.trackBarDays = new System.Windows.Forms.TrackBar();
+            this.Budget = new System.Windows.Forms.Label();
+            this.textBoxBudget = new System.Windows.Forms.TextBox();
+            this.trackBarBudget = new System.Windows.Forms.TrackBar();
+            this.pnlByChoice2 = new System.Windows.Forms.Panel();
+            this.checkBoxOutdoor = new System.Windows.Forms.CheckBox();
+            this.checkBoxSports = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.radioButtonCold = new System.Windows.Forms.RadioButton();
+            this.radioButtonDoesntMatter = new System.Windows.Forms.RadioButton();
+            this.radioButtonWarm = new System.Windows.Forms.RadioButton();
+            this.checkBoxShopping = new System.Windows.Forms.CheckBox();
+            this.checkBoxSportsEvents = new System.Windows.Forms.CheckBox();
+            this.checkBoxCulture = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,6 +93,10 @@
             this.pnlCompare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).BeginInit();
+            this.pnlByCh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).BeginInit();
+            this.pnlByChoice2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -423,12 +448,230 @@
             this.btnBackC.UseVisualStyleBackColor = true;
             this.btnBackC.Click += new System.EventHandler(this.btnBackC_Click);
             // 
+            // pnlByCh
+            // 
+            this.pnlByCh.Controls.Add(this.btnMenu);
+            this.pnlByCh.Controls.Add(this.btnNext);
+            this.pnlByCh.Controls.Add(this.label2);
+            this.pnlByCh.Controls.Add(this.textBoxDays);
+            this.pnlByCh.Controls.Add(this.trackBarDays);
+            this.pnlByCh.Controls.Add(this.Budget);
+            this.pnlByCh.Controls.Add(this.textBoxBudget);
+            this.pnlByCh.Controls.Add(this.trackBarBudget);
+            this.pnlByCh.Location = new System.Drawing.Point(243, 15);
+            this.pnlByCh.Name = "pnlByCh";
+            this.pnlByCh.Size = new System.Drawing.Size(726, 588);
+            this.pnlByCh.TabIndex = 9;
+            this.pnlByCh.Visible = false;
+            this.pnlByCh.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlByCh_Paint);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(18, 21);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(127, 59);
+            this.btnMenu.TabIndex = 7;
+            this.btnMenu.Text = "Back to Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(553, 492);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(127, 59);
+            this.btnNext.TabIndex = 6;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(97, 287);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "DNi";
+            // 
+            // textBoxDays
+            // 
+            this.textBoxDays.Location = new System.Drawing.Point(444, 329);
+            this.textBoxDays.Name = "textBoxDays";
+            this.textBoxDays.Size = new System.Drawing.Size(83, 31);
+            this.textBoxDays.TabIndex = 4;
+            // 
+            // trackBarDays
+            // 
+            this.trackBarDays.LargeChange = 1;
+            this.trackBarDays.Location = new System.Drawing.Point(94, 319);
+            this.trackBarDays.Maximum = 30;
+            this.trackBarDays.Name = "trackBarDays";
+            this.trackBarDays.Size = new System.Drawing.Size(281, 69);
+            this.trackBarDays.SmallChange = 0;
+            this.trackBarDays.TabIndex = 3;
+            this.trackBarDays.Scroll += new System.EventHandler(this.Form1_Load);
+            // 
+            // Budget
+            // 
+            this.Budget.AutoSize = true;
+            this.Budget.Location = new System.Drawing.Point(88, 118);
+            this.Budget.Name = "Budget";
+            this.Budget.Size = new System.Drawing.Size(69, 25);
+            this.Budget.TabIndex = 2;
+            this.Budget.Text = "Budget";
+            // 
+            // textBoxBudget
+            // 
+            this.textBoxBudget.Location = new System.Drawing.Point(428, 160);
+            this.textBoxBudget.Name = "textBoxBudget";
+            this.textBoxBudget.Size = new System.Drawing.Size(83, 31);
+            this.textBoxBudget.TabIndex = 1;
+            // 
+            // trackBarBudget
+            // 
+            this.trackBarBudget.LargeChange = 100;
+            this.trackBarBudget.Location = new System.Drawing.Point(88, 150);
+            this.trackBarBudget.Maximum = 2000;
+            this.trackBarBudget.Name = "trackBarBudget";
+            this.trackBarBudget.Size = new System.Drawing.Size(281, 69);
+            this.trackBarBudget.SmallChange = 50;
+            this.trackBarBudget.TabIndex = 0;
+            this.trackBarBudget.Scroll += new System.EventHandler(this.Form1_Load);
+            // 
+            // pnlByChoice2
+            // 
+            this.pnlByChoice2.Controls.Add(this.checkBoxOutdoor);
+            this.pnlByChoice2.Controls.Add(this.checkBoxSports);
+            this.pnlByChoice2.Controls.Add(this.label5);
+            this.pnlByChoice2.Controls.Add(this.label4);
+            this.pnlByChoice2.Controls.Add(this.radioButtonCold);
+            this.pnlByChoice2.Controls.Add(this.radioButtonDoesntMatter);
+            this.pnlByChoice2.Controls.Add(this.radioButtonWarm);
+            this.pnlByChoice2.Controls.Add(this.checkBoxShopping);
+            this.pnlByChoice2.Controls.Add(this.checkBoxSportsEvents);
+            this.pnlByChoice2.Controls.Add(this.checkBoxCulture);
+            this.pnlByChoice2.Controls.Add(this.label3);
+            this.pnlByChoice2.Location = new System.Drawing.Point(244, 18);
+            this.pnlByChoice2.Name = "pnlByChoice2";
+            this.pnlByChoice2.Size = new System.Drawing.Size(729, 603);
+            this.pnlByChoice2.TabIndex = 10;
+            this.pnlByChoice2.Visible = false;
+            // 
+            // checkBoxOutdoor
+            // 
+            this.checkBoxOutdoor.AutoSize = true;
+            this.checkBoxOutdoor.Location = new System.Drawing.Point(309, 381);
+            this.checkBoxOutdoor.Name = "checkBoxOutdoor";
+            this.checkBoxOutdoor.Size = new System.Drawing.Size(176, 29);
+            this.checkBoxOutdoor.TabIndex = 10;
+            this.checkBoxOutdoor.Text = "outdoor activities";
+            this.checkBoxOutdoor.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSports
+            // 
+            this.checkBoxSports.AutoSize = true;
+            this.checkBoxSports.Location = new System.Drawing.Point(93, 377);
+            this.checkBoxSports.Name = "checkBoxSports";
+            this.checkBoxSports.Size = new System.Drawing.Size(160, 29);
+            this.checkBoxSports.TabIndex = 9;
+            this.checkBoxSports.Text = "sports activities";
+            this.checkBoxSports.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(188, 383);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 25);
+            this.label5.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(99, 236);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "activities";
+            // 
+            // radioButtonCold
+            // 
+            this.radioButtonCold.AutoSize = true;
+            this.radioButtonCold.Location = new System.Drawing.Point(177, 150);
+            this.radioButtonCold.Name = "radioButtonCold";
+            this.radioButtonCold.Size = new System.Drawing.Size(71, 29);
+            this.radioButtonCold.TabIndex = 6;
+            this.radioButtonCold.Text = "cold";
+            this.radioButtonCold.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDoesntMatter
+            // 
+            this.radioButtonDoesntMatter.AutoSize = true;
+            this.radioButtonDoesntMatter.Location = new System.Drawing.Point(265, 153);
+            this.radioButtonDoesntMatter.Name = "radioButtonDoesntMatter";
+            this.radioButtonDoesntMatter.Size = new System.Drawing.Size(153, 29);
+            this.radioButtonDoesntMatter.TabIndex = 5;
+            this.radioButtonDoesntMatter.Text = "doesn\'t matter";
+            this.radioButtonDoesntMatter.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonWarm
+            // 
+            this.radioButtonWarm.AutoSize = true;
+            this.radioButtonWarm.Location = new System.Drawing.Point(85, 149);
+            this.radioButtonWarm.Name = "radioButtonWarm";
+            this.radioButtonWarm.Size = new System.Drawing.Size(81, 29);
+            this.radioButtonWarm.TabIndex = 4;
+            this.radioButtonWarm.Text = "warm";
+            this.radioButtonWarm.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShopping
+            // 
+            this.checkBoxShopping.AutoSize = true;
+            this.checkBoxShopping.Location = new System.Drawing.Point(335, 293);
+            this.checkBoxShopping.Name = "checkBoxShopping";
+            this.checkBoxShopping.Size = new System.Drawing.Size(114, 29);
+            this.checkBoxShopping.TabIndex = 3;
+            this.checkBoxShopping.Text = "shopping";
+            this.checkBoxShopping.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSportsEvents
+            // 
+            this.checkBoxSportsEvents.AutoSize = true;
+            this.checkBoxSportsEvents.Location = new System.Drawing.Point(193, 292);
+            this.checkBoxSportsEvents.Name = "checkBoxSportsEvents";
+            this.checkBoxSportsEvents.Size = new System.Drawing.Size(144, 29);
+            this.checkBoxSportsEvents.TabIndex = 2;
+            this.checkBoxSportsEvents.Text = "sports events";
+            this.checkBoxSportsEvents.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCulture
+            // 
+            this.checkBoxCulture.AutoSize = true;
+            this.checkBoxCulture.Location = new System.Drawing.Point(88, 290);
+            this.checkBoxCulture.Name = "checkBoxCulture";
+            this.checkBoxCulture.Size = new System.Drawing.Size(91, 29);
+            this.checkBoxCulture.TabIndex = 1;
+            this.checkBoxCulture.Text = "culture";
+            this.checkBoxCulture.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(84, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Climate";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1002, 664);
+            this.Controls.Add(this.pnlByChoice2);
+            this.Controls.Add(this.pnlByCh);
             this.Controls.Add(this.pnlCompare);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.label1);
@@ -437,6 +680,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -450,6 +694,12 @@
             this.pnlCompare.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).EndInit();
+            this.pnlByCh.ResumeLayout(false);
+            this.pnlByCh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).EndInit();
+            this.pnlByChoice2.ResumeLayout(false);
+            this.pnlByChoice2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,5 +737,26 @@
         private Button btnBackC;
         private DataGridView dataSecondC;
         private DataGridView dataOneC;
+        private Panel pnlByCh;
+        private Label Budget;
+        private TextBox textBoxBudget;
+        private TrackBar trackBarBudget;
+        private Label label2;
+        private TextBox textBoxDays;
+        private TrackBar trackBarDays;
+        private Button btnMenu;
+        private Button btnNext;
+        private Panel pnlByChoice2;
+        private CheckBox checkBoxOutdoor;
+        private CheckBox checkBoxSports;
+        private Label label5;
+        private Label label4;
+        private RadioButton radioButtonCold;
+        private RadioButton radioButtonDoesntMatter;
+        private RadioButton radioButtonWarm;
+        private CheckBox checkBoxShopping;
+        private CheckBox checkBoxSportsEvents;
+        private CheckBox checkBoxCulture;
+        private Label label3;
     }
 }
