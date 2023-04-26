@@ -151,7 +151,7 @@ namespace The_project
             {
                 textBoxDays.Text += " days";
             }
-            if (radioButtonWarm.Checked==true)
+            if (radioButtonWarm.Checked)
             {
                 checkBoxSports.Text = "Skiing/Snowboarding";
             }
