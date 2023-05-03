@@ -28,681 +28,875 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnRandom = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnCompare = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.showMore = new System.Windows.Forms.Button();
-            this.iconProfile = new System.Windows.Forms.PictureBox();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnFavourite = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.labelName = new System.Windows.Forms.Label();
-            this.sidePanel = new System.Windows.Forms.Panel();
-            this.pnlRandom = new System.Windows.Forms.Panel();
-            this.btnBackG = new System.Windows.Forms.Button();
-            this.btnAccept = new System.Windows.Forms.Button();
-            this.btnGenerate = new System.Windows.Forms.Button();
-            this.dataRandom = new System.Windows.Forms.DataGridView();
-            this.pnlCompare = new System.Windows.Forms.Panel();
-            this.dataSecondC = new System.Windows.Forms.DataGridView();
-            this.dataOneC = new System.Windows.Forms.DataGridView();
-            this.combSecondC = new System.Windows.Forms.ComboBox();
-            this.combOneC = new System.Windows.Forms.ComboBox();
-            this.btnComparee = new System.Windows.Forms.Button();
-            this.btnBackC = new System.Windows.Forms.Button();
-            this.pnlByCh = new System.Windows.Forms.Panel();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxDays = new System.Windows.Forms.TextBox();
-            this.trackBarDays = new System.Windows.Forms.TrackBar();
-            this.Budget = new System.Windows.Forms.Label();
-            this.textBoxBudget = new System.Windows.Forms.TextBox();
-            this.trackBarBudget = new System.Windows.Forms.TrackBar();
-            this.pnlByChoice2 = new System.Windows.Forms.Panel();
-            this.checkBoxOutdoor = new System.Windows.Forms.CheckBox();
-            this.checkBoxSports = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radioButtonCold = new System.Windows.Forms.RadioButton();
-            this.radioButtonDoesntMatter = new System.Windows.Forms.RadioButton();
-            this.radioButtonWarm = new System.Windows.Forms.RadioButton();
-            this.checkBoxShopping = new System.Windows.Forms.CheckBox();
-            this.checkBoxSportsEvents = new System.Windows.Forms.CheckBox();
-            this.checkBoxCulture = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).BeginInit();
-            this.sidePanel.SuspendLayout();
-            this.pnlRandom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataRandom)).BeginInit();
-            this.pnlCompare.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).BeginInit();
-            this.pnlByCh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).BeginInit();
-            this.pnlByChoice2.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            button1 = new Button();
+            panel2 = new Panel();
+            button2 = new Button();
+            panel3 = new Panel();
+            btnRandom = new Button();
+            panel4 = new Panel();
+            btnCompare = new Button();
+            label1 = new Label();
+            pnlMenu = new Panel();
+            showMore = new Button();
+            iconProfile = new PictureBox();
+            btnDashboard = new Button();
+            btnContactUs = new Button();
+            btnReviews = new Button();
+            btnFavourite = new Button();
+            btnExit = new Button();
+            labelName = new Label();
+            sidePanel = new Panel();
+            pnlRandom = new Panel();
+            btnBackG = new Button();
+            btnAccept = new Button();
+            btnGenerate = new Button();
+            dataRandom = new DataGridView();
+            pnlCompare = new Panel();
+            dataSecondC = new DataGridView();
+            dataOneC = new DataGridView();
+            combSecondC = new ComboBox();
+            combOneC = new ComboBox();
+            btnComparee = new Button();
+            btnBackC = new Button();
+            pnlByCh = new Panel();
+            btnMenu = new Button();
+            btnNext = new Button();
+            label2 = new Label();
+            textBoxDays = new TextBox();
+            trackBarDays = new TrackBar();
+            Budget = new Label();
+            textBoxBudget = new TextBox();
+            trackBarBudget = new TrackBar();
+            pnlByChoice2 = new Panel();
+            checkBoxOutdoor = new CheckBox();
+            checkBoxSports = new CheckBox();
+            label5 = new Label();
+            label4 = new Label();
+            radioButtonCold = new RadioButton();
+            radioButtonDoesntMatter = new RadioButton();
+            radioButtonWarm = new RadioButton();
+            checkBoxShopping = new CheckBox();
+            checkBoxSportsEvents = new CheckBox();
+            checkBoxCulture = new CheckBox();
+            label3 = new Label();
+            pnlContactUs = new Panel();
+            txtBoxSubject = new TextBox();
+            btnSendEmail = new Button();
+            txtboxEmail = new TextBox();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            btnBackToMenuContactUs = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconProfile).BeginInit();
+            sidePanel.SuspendLayout();
+            pnlRandom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataRandom).BeginInit();
+            pnlCompare.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataSecondC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataOneC).BeginInit();
+            pnlByCh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarDays).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)trackBarBudget).BeginInit();
+            pnlByChoice2.SuspendLayout();
+            pnlContactUs.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(50, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(324, 193);
-            this.panel1.TabIndex = 4;
+            panel1.Controls.Add(button1);
+            panel1.Location = new Point(35, 25);
+            panel1.Margin = new Padding(2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(227, 116);
+            panel1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(54, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 74);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "By your choice";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(38, 23);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(123, 44);
+            button1.TabIndex = 7;
+            button1.Text = "By your choice";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(334, 42);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(324, 193);
-            this.panel2.TabIndex = 5;
+            panel2.Controls.Add(button2);
+            panel2.Location = new Point(234, 25);
+            panel2.Margin = new Padding(2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(227, 116);
+            panel2.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(77, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 74);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Search by data \r\nfor country\r\n";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Location = new Point(54, 23);
+            button2.Margin = new Padding(2);
+            button2.Name = "button2";
+            button2.Size = new Size(130, 44);
+            button2.TabIndex = 8;
+            button2.Text = "Search by data \r\nfor country\r\n";
+            button2.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnRandom);
-            this.panel3.Location = new System.Drawing.Point(50, 217);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(324, 193);
-            this.panel3.TabIndex = 5;
+            panel3.Controls.Add(btnRandom);
+            panel3.Location = new Point(35, 130);
+            panel3.Margin = new Padding(2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(227, 116);
+            panel3.TabIndex = 5;
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(54, 50);
-            this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(176, 74);
-            this.btnRandom.TabIndex = 9;
-            this.btnRandom.Text = "Generate random \r\ncountry\r\n";
-            this.btnRandom.UseVisualStyleBackColor = true;
-            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            btnRandom.Location = new Point(38, 30);
+            btnRandom.Margin = new Padding(2);
+            btnRandom.Name = "btnRandom";
+            btnRandom.Size = new Size(123, 44);
+            btnRandom.TabIndex = 9;
+            btnRandom.Text = "Generate random \r\ncountry\r\n";
+            btnRandom.UseVisualStyleBackColor = true;
+            btnRandom.Click += btnRandom_Click;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btnCompare);
-            this.panel4.Location = new System.Drawing.Point(334, 217);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(324, 193);
-            this.panel4.TabIndex = 5;
+            panel4.Controls.Add(btnCompare);
+            panel4.Location = new Point(234, 130);
+            panel4.Margin = new Padding(2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(227, 116);
+            panel4.TabIndex = 5;
             // 
             // btnCompare
             // 
-            this.btnCompare.Location = new System.Drawing.Point(67, 50);
-            this.btnCompare.Name = "btnCompare";
-            this.btnCompare.Size = new System.Drawing.Size(186, 74);
-            this.btnCompare.TabIndex = 10;
-            this.btnCompare.Text = "Compare countries\r\n";
-            this.btnCompare.UseVisualStyleBackColor = true;
-            this.btnCompare.Click += new System.EventHandler(this.btnCompare_Click);
+            btnCompare.Location = new Point(47, 30);
+            btnCompare.Margin = new Padding(2);
+            btnCompare.Name = "btnCompare";
+            btnCompare.Size = new Size(130, 44);
+            btnCompare.TabIndex = 10;
+            btnCompare.Text = "Compare countries\r\n";
+            btnCompare.UseVisualStyleBackColor = true;
+            btnCompare.Click += btnCompare_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Choose your destination";
+            label1.AutoSize = true;
+            label1.Location = new Point(349, 29);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Choose your destination";
             // 
             // pnlMenu
             // 
-            this.pnlMenu.AutoSize = true;
-            this.pnlMenu.Controls.Add(this.panel4);
-            this.pnlMenu.Controls.Add(this.panel3);
-            this.pnlMenu.Controls.Add(this.panel2);
-            this.pnlMenu.Controls.Add(this.panel1);
-            this.pnlMenu.Location = new System.Drawing.Point(268, 120);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(705, 457);
-            this.pnlMenu.TabIndex = 6;
+            pnlMenu.AutoSize = true;
+            pnlMenu.Controls.Add(panel4);
+            pnlMenu.Controls.Add(panel3);
+            pnlMenu.Controls.Add(panel2);
+            pnlMenu.Controls.Add(panel1);
+            pnlMenu.Location = new Point(188, 72);
+            pnlMenu.Margin = new Padding(2);
+            pnlMenu.Name = "pnlMenu";
+            pnlMenu.Size = new Size(494, 274);
+            pnlMenu.TabIndex = 6;
             // 
             // showMore
             // 
-            this.showMore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showMore.BackgroundImage")));
-            this.showMore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.showMore.FlatAppearance.BorderSize = 0;
-            this.showMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showMore.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.showMore.Location = new System.Drawing.Point(6, 12);
-            this.showMore.Name = "showMore";
-            this.showMore.Size = new System.Drawing.Size(36, 34);
-            this.showMore.TabIndex = 2;
-            this.showMore.UseVisualStyleBackColor = true;
-            this.showMore.Click += new System.EventHandler(this.showMore_Click);
+            showMore.BackgroundImage = (Image)resources.GetObject("showMore.BackgroundImage");
+            showMore.BackgroundImageLayout = ImageLayout.Zoom;
+            showMore.FlatAppearance.BorderSize = 0;
+            showMore.FlatStyle = FlatStyle.Flat;
+            showMore.Font = new Font("Showcard Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            showMore.Location = new Point(4, 7);
+            showMore.Margin = new Padding(2);
+            showMore.Name = "showMore";
+            showMore.Size = new Size(25, 20);
+            showMore.TabIndex = 2;
+            showMore.UseVisualStyleBackColor = true;
+            showMore.Click += showMore_Click;
             // 
             // iconProfile
             // 
-            this.iconProfile.ErrorImage = null;
-            this.iconProfile.Image = global::The_project.Properties.Resources.user__1_;
-            this.iconProfile.InitialImage = null;
-            this.iconProfile.Location = new System.Drawing.Point(62, 12);
-            this.iconProfile.Name = "iconProfile";
-            this.iconProfile.Size = new System.Drawing.Size(98, 87);
-            this.iconProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconProfile.TabIndex = 3;
-            this.iconProfile.TabStop = false;
-            this.iconProfile.Click += new System.EventHandler(this.iconProfile_Click);
+            iconProfile.ErrorImage = null;
+            iconProfile.Image = Properties.Resources.user__1_;
+            iconProfile.InitialImage = null;
+            iconProfile.Location = new Point(43, 7);
+            iconProfile.Margin = new Padding(2);
+            iconProfile.Name = "iconProfile";
+            iconProfile.Size = new Size(69, 52);
+            iconProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            iconProfile.TabIndex = 3;
+            iconProfile.TabStop = false;
+            iconProfile.Click += iconProfile_Click;
             // 
             // btnDashboard
             // 
-            this.btnDashboard.AllowDrop = true;
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(62, 132);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(55, 51);
-            this.btnDashboard.TabIndex = 4;
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.AllowDrop = true;
+            btnDashboard.Cursor = Cursors.Hand;
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Image = Properties.Resources.dashboard;
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Location = new Point(43, 79);
+            btnDashboard.Margin = new Padding(2);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(38, 31);
+            btnDashboard.TabIndex = 4;
+            btnDashboard.TextAlign = ContentAlignment.MiddleRight;
+            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDashboard.UseVisualStyleBackColor = true;
             // 
             // btnContactUs
             // 
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnContactUs.ForeColor = System.Drawing.Color.White;
-            this.btnContactUs.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnContactUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContactUs.Location = new System.Drawing.Point(62, 316);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(55, 51);
-            this.btnContactUs.TabIndex = 5;
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnContactUs.UseVisualStyleBackColor = true;
+            btnContactUs.FlatAppearance.BorderSize = 0;
+            btnContactUs.FlatStyle = FlatStyle.Flat;
+            btnContactUs.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnContactUs.ForeColor = Color.White;
+            btnContactUs.Image = Properties.Resources.dashboard;
+            btnContactUs.ImageAlign = ContentAlignment.MiddleLeft;
+            btnContactUs.Location = new Point(43, 190);
+            btnContactUs.Margin = new Padding(2);
+            btnContactUs.Name = "btnContactUs";
+            btnContactUs.Size = new Size(38, 31);
+            btnContactUs.TabIndex = 5;
+            btnContactUs.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnContactUs.UseVisualStyleBackColor = true;
+            btnContactUs.Click += btnContactUs_Click;
             // 
             // btnReviews
             // 
-            this.btnReviews.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReviews.FlatAppearance.BorderSize = 0;
-            this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReviews.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReviews.ForeColor = System.Drawing.Color.White;
-            this.btnReviews.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(62, 202);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(55, 51);
-            this.btnReviews.TabIndex = 6;
-            this.btnReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReviews.UseVisualStyleBackColor = true;
+            btnReviews.Cursor = Cursors.Hand;
+            btnReviews.FlatAppearance.BorderSize = 0;
+            btnReviews.FlatStyle = FlatStyle.Flat;
+            btnReviews.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReviews.ForeColor = Color.White;
+            btnReviews.Image = Properties.Resources.dashboard;
+            btnReviews.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReviews.Location = new Point(43, 121);
+            btnReviews.Margin = new Padding(2);
+            btnReviews.Name = "btnReviews";
+            btnReviews.Size = new Size(38, 31);
+            btnReviews.TabIndex = 6;
+            btnReviews.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReviews.UseVisualStyleBackColor = true;
             // 
             // btnFavourite
             // 
-            this.btnFavourite.FlatAppearance.BorderSize = 0;
-            this.btnFavourite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFavourite.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFavourite.ForeColor = System.Drawing.Color.White;
-            this.btnFavourite.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnFavourite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFavourite.Location = new System.Drawing.Point(62, 259);
-            this.btnFavourite.Name = "btnFavourite";
-            this.btnFavourite.Size = new System.Drawing.Size(55, 51);
-            this.btnFavourite.TabIndex = 7;
-            this.btnFavourite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFavourite.UseVisualStyleBackColor = true;
+            btnFavourite.FlatAppearance.BorderSize = 0;
+            btnFavourite.FlatStyle = FlatStyle.Flat;
+            btnFavourite.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnFavourite.ForeColor = Color.White;
+            btnFavourite.Image = Properties.Resources.dashboard;
+            btnFavourite.ImageAlign = ContentAlignment.MiddleLeft;
+            btnFavourite.Location = new Point(43, 155);
+            btnFavourite.Margin = new Padding(2);
+            btnFavourite.Name = "btnFavourite";
+            btnFavourite.Size = new Size(38, 31);
+            btnFavourite.TabIndex = 7;
+            btnFavourite.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnFavourite.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = global::The_project.Properties.Resources.dashboard;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(62, 570);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(55, 51);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
+            btnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.White;
+            btnExit.Image = Properties.Resources.dashboard;
+            btnExit.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExit.Location = new Point(43, 342);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(38, 31);
+            btnExit.TabIndex = 8;
+            btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnExit.UseVisualStyleBackColor = true;
             // 
             // labelName
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(42, 102);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(0, 25);
-            this.labelName.TabIndex = 9;
+            labelName.AutoSize = true;
+            labelName.Location = new Point(29, 61);
+            labelName.Margin = new Padding(2, 0, 2, 0);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(0, 15);
+            labelName.TabIndex = 9;
             // 
             // sidePanel
             // 
-            this.sidePanel.BackColor = System.Drawing.Color.Coral;
-            this.sidePanel.Controls.Add(this.labelName);
-            this.sidePanel.Controls.Add(this.btnExit);
-            this.sidePanel.Controls.Add(this.btnFavourite);
-            this.sidePanel.Controls.Add(this.btnReviews);
-            this.sidePanel.Controls.Add(this.btnContactUs);
-            this.sidePanel.Controls.Add(this.btnDashboard);
-            this.sidePanel.Controls.Add(this.iconProfile);
-            this.sidePanel.Controls.Add(this.showMore);
-            this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(214, 664);
-            this.sidePanel.TabIndex = 3;
+            sidePanel.BackColor = Color.Coral;
+            sidePanel.Controls.Add(labelName);
+            sidePanel.Controls.Add(btnExit);
+            sidePanel.Controls.Add(btnFavourite);
+            sidePanel.Controls.Add(btnReviews);
+            sidePanel.Controls.Add(btnContactUs);
+            sidePanel.Controls.Add(btnDashboard);
+            sidePanel.Controls.Add(iconProfile);
+            sidePanel.Controls.Add(showMore);
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Location = new Point(0, 0);
+            sidePanel.Margin = new Padding(2);
+            sidePanel.Name = "sidePanel";
+            sidePanel.Size = new Size(150, 398);
+            sidePanel.TabIndex = 3;
             // 
             // pnlRandom
             // 
-            this.pnlRandom.Controls.Add(this.btnBackG);
-            this.pnlRandom.Controls.Add(this.btnAccept);
-            this.pnlRandom.Controls.Add(this.btnGenerate);
-            this.pnlRandom.Controls.Add(this.dataRandom);
-            this.pnlRandom.Location = new System.Drawing.Point(243, 36);
-            this.pnlRandom.Name = "pnlRandom";
-            this.pnlRandom.Size = new System.Drawing.Size(730, 567);
-            this.pnlRandom.TabIndex = 7;
-            this.pnlRandom.Visible = false;
+            pnlRandom.Controls.Add(btnBackG);
+            pnlRandom.Controls.Add(btnAccept);
+            pnlRandom.Controls.Add(btnGenerate);
+            pnlRandom.Controls.Add(dataRandom);
+            pnlRandom.Location = new Point(170, 22);
+            pnlRandom.Margin = new Padding(2);
+            pnlRandom.Name = "pnlRandom";
+            pnlRandom.Size = new Size(511, 340);
+            pnlRandom.TabIndex = 7;
+            pnlRandom.Visible = false;
             // 
             // btnBackG
             // 
-            this.btnBackG.Location = new System.Drawing.Point(37, 13);
-            this.btnBackG.Name = "btnBackG";
-            this.btnBackG.Size = new System.Drawing.Size(93, 31);
-            this.btnBackG.TabIndex = 4;
-            this.btnBackG.Text = "back";
-            this.btnBackG.UseVisualStyleBackColor = true;
-            this.btnBackG.Click += new System.EventHandler(this.btnBackG_Click);
+            btnBackG.Location = new Point(26, 8);
+            btnBackG.Margin = new Padding(2);
+            btnBackG.Name = "btnBackG";
+            btnBackG.Size = new Size(65, 19);
+            btnBackG.TabIndex = 4;
+            btnBackG.Text = "back";
+            btnBackG.UseVisualStyleBackColor = true;
+            btnBackG.Click += btnBackG_Click;
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(438, 304);
-            this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(220, 63);
-            this.btnAccept.TabIndex = 3;
-            this.btnAccept.Text = "Accept";
-            this.btnAccept.UseVisualStyleBackColor = true;
-            this.btnAccept.Visible = false;
-            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            btnAccept.Location = new Point(307, 182);
+            btnAccept.Margin = new Padding(2);
+            btnAccept.Name = "btnAccept";
+            btnAccept.Size = new Size(154, 38);
+            btnAccept.TabIndex = 3;
+            btnAccept.Text = "Accept";
+            btnAccept.UseVisualStyleBackColor = true;
+            btnAccept.Visible = false;
+            btnAccept.Click += btnAccept_Click;
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(436, 205);
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(222, 69);
-            this.btnGenerate.TabIndex = 1;
-            this.btnGenerate.Text = "Generate";
-            this.btnGenerate.UseVisualStyleBackColor = true;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            btnGenerate.Location = new Point(305, 123);
+            btnGenerate.Margin = new Padding(2);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(155, 41);
+            btnGenerate.TabIndex = 1;
+            btnGenerate.Text = "Generate";
+            btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // dataRandom
             // 
-            this.dataRandom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataRandom.Location = new System.Drawing.Point(18, 56);
-            this.dataRandom.Name = "dataRandom";
-            this.dataRandom.RowHeadersWidth = 62;
-            this.dataRandom.RowTemplate.Height = 33;
-            this.dataRandom.Size = new System.Drawing.Size(381, 458);
-            this.dataRandom.TabIndex = 0;
+            dataRandom.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataRandom.Location = new Point(13, 34);
+            dataRandom.Margin = new Padding(2);
+            dataRandom.Name = "dataRandom";
+            dataRandom.RowHeadersWidth = 62;
+            dataRandom.RowTemplate.Height = 33;
+            dataRandom.Size = new Size(267, 275);
+            dataRandom.TabIndex = 0;
             // 
             // pnlCompare
             // 
-            this.pnlCompare.Controls.Add(this.dataSecondC);
-            this.pnlCompare.Controls.Add(this.dataOneC);
-            this.pnlCompare.Controls.Add(this.combSecondC);
-            this.pnlCompare.Controls.Add(this.combOneC);
-            this.pnlCompare.Controls.Add(this.btnComparee);
-            this.pnlCompare.Controls.Add(this.btnBackC);
-            this.pnlCompare.Location = new System.Drawing.Point(244, 34);
-            this.pnlCompare.Name = "pnlCompare";
-            this.pnlCompare.Size = new System.Drawing.Size(729, 567);
-            this.pnlCompare.TabIndex = 8;
-            this.pnlCompare.Visible = false;
+            pnlCompare.Controls.Add(dataSecondC);
+            pnlCompare.Controls.Add(dataOneC);
+            pnlCompare.Controls.Add(combSecondC);
+            pnlCompare.Controls.Add(combOneC);
+            pnlCompare.Controls.Add(btnComparee);
+            pnlCompare.Controls.Add(btnBackC);
+            pnlCompare.Location = new Point(171, 20);
+            pnlCompare.Margin = new Padding(2);
+            pnlCompare.Name = "pnlCompare";
+            pnlCompare.Size = new Size(510, 340);
+            pnlCompare.TabIndex = 8;
+            pnlCompare.Visible = false;
             // 
             // dataSecondC
             // 
-            this.dataSecondC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataSecondC.Location = new System.Drawing.Point(407, 127);
-            this.dataSecondC.Name = "dataSecondC";
-            this.dataSecondC.RowHeadersWidth = 62;
-            this.dataSecondC.RowTemplate.Height = 33;
-            this.dataSecondC.Size = new System.Drawing.Size(275, 342);
-            this.dataSecondC.TabIndex = 5;
-            this.dataSecondC.Visible = false;
+            dataSecondC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataSecondC.Location = new Point(285, 76);
+            dataSecondC.Margin = new Padding(2);
+            dataSecondC.Name = "dataSecondC";
+            dataSecondC.RowHeadersWidth = 62;
+            dataSecondC.RowTemplate.Height = 33;
+            dataSecondC.Size = new Size(192, 205);
+            dataSecondC.TabIndex = 5;
+            dataSecondC.Visible = false;
             // 
             // dataOneC
             // 
-            this.dataOneC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOneC.Location = new System.Drawing.Point(60, 127);
-            this.dataOneC.Name = "dataOneC";
-            this.dataOneC.RowHeadersWidth = 62;
-            this.dataOneC.RowTemplate.Height = 33;
-            this.dataOneC.Size = new System.Drawing.Size(275, 342);
-            this.dataOneC.TabIndex = 4;
-            this.dataOneC.Visible = false;
+            dataOneC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataOneC.Location = new Point(42, 76);
+            dataOneC.Margin = new Padding(2);
+            dataOneC.Name = "dataOneC";
+            dataOneC.RowHeadersWidth = 62;
+            dataOneC.RowTemplate.Height = 33;
+            dataOneC.Size = new Size(192, 205);
+            dataOneC.TabIndex = 4;
+            dataOneC.Visible = false;
             // 
             // combSecondC
             // 
-            this.combSecondC.FormattingEnabled = true;
-            this.combSecondC.Location = new System.Drawing.Point(479, 207);
-            this.combSecondC.Name = "combSecondC";
-            this.combSecondC.Size = new System.Drawing.Size(155, 33);
-            this.combSecondC.TabIndex = 3;
+            combSecondC.FormattingEnabled = true;
+            combSecondC.Location = new Point(335, 124);
+            combSecondC.Margin = new Padding(2);
+            combSecondC.Name = "combSecondC";
+            combSecondC.Size = new Size(110, 23);
+            combSecondC.TabIndex = 3;
             // 
             // combOneC
             // 
-            this.combOneC.FormattingEnabled = true;
-            this.combOneC.Location = new System.Drawing.Point(118, 207);
-            this.combOneC.Name = "combOneC";
-            this.combOneC.Size = new System.Drawing.Size(155, 33);
-            this.combOneC.TabIndex = 2;
+            combOneC.FormattingEnabled = true;
+            combOneC.Location = new Point(83, 124);
+            combOneC.Margin = new Padding(2);
+            combOneC.Name = "combOneC";
+            combOneC.Size = new Size(110, 23);
+            combOneC.TabIndex = 2;
             // 
             // btnComparee
             // 
-            this.btnComparee.Location = new System.Drawing.Point(284, 318);
-            this.btnComparee.Name = "btnComparee";
-            this.btnComparee.Size = new System.Drawing.Size(135, 72);
-            this.btnComparee.TabIndex = 1;
-            this.btnComparee.Text = "Compare";
-            this.btnComparee.UseVisualStyleBackColor = true;
-            this.btnComparee.Click += new System.EventHandler(this.btnComparee_Click);
+            btnComparee.Location = new Point(199, 191);
+            btnComparee.Margin = new Padding(2);
+            btnComparee.Name = "btnComparee";
+            btnComparee.Size = new Size(94, 43);
+            btnComparee.TabIndex = 1;
+            btnComparee.Text = "Compare";
+            btnComparee.UseVisualStyleBackColor = true;
+            btnComparee.Click += btnComparee_Click;
             // 
             // btnBackC
             // 
-            this.btnBackC.Location = new System.Drawing.Point(3, 2);
-            this.btnBackC.Name = "btnBackC";
-            this.btnBackC.Size = new System.Drawing.Size(89, 44);
-            this.btnBackC.TabIndex = 0;
-            this.btnBackC.Text = "back";
-            this.btnBackC.UseVisualStyleBackColor = true;
-            this.btnBackC.Click += new System.EventHandler(this.btnBackC_Click);
+            btnBackC.Location = new Point(2, 1);
+            btnBackC.Margin = new Padding(2);
+            btnBackC.Name = "btnBackC";
+            btnBackC.Size = new Size(62, 26);
+            btnBackC.TabIndex = 0;
+            btnBackC.Text = "back";
+            btnBackC.UseVisualStyleBackColor = true;
+            btnBackC.Click += btnBackC_Click;
             // 
             // pnlByCh
             // 
-            this.pnlByCh.Controls.Add(this.btnMenu);
-            this.pnlByCh.Controls.Add(this.btnNext);
-            this.pnlByCh.Controls.Add(this.label2);
-            this.pnlByCh.Controls.Add(this.textBoxDays);
-            this.pnlByCh.Controls.Add(this.trackBarDays);
-            this.pnlByCh.Controls.Add(this.Budget);
-            this.pnlByCh.Controls.Add(this.textBoxBudget);
-            this.pnlByCh.Controls.Add(this.trackBarBudget);
-            this.pnlByCh.Location = new System.Drawing.Point(243, 15);
-            this.pnlByCh.Name = "pnlByCh";
-            this.pnlByCh.Size = new System.Drawing.Size(726, 588);
-            this.pnlByCh.TabIndex = 9;
-            this.pnlByCh.Visible = false;
-            this.pnlByCh.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlByCh_Paint);
+            pnlByCh.Controls.Add(btnMenu);
+            pnlByCh.Controls.Add(btnNext);
+            pnlByCh.Controls.Add(label2);
+            pnlByCh.Controls.Add(textBoxDays);
+            pnlByCh.Controls.Add(trackBarDays);
+            pnlByCh.Controls.Add(Budget);
+            pnlByCh.Controls.Add(textBoxBudget);
+            pnlByCh.Controls.Add(trackBarBudget);
+            pnlByCh.Location = new Point(170, 9);
+            pnlByCh.Margin = new Padding(2);
+            pnlByCh.Name = "pnlByCh";
+            pnlByCh.Size = new Size(508, 353);
+            pnlByCh.TabIndex = 9;
+            pnlByCh.Visible = false;
+            pnlByCh.Paint += pnlByCh_Paint;
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(18, 21);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(127, 59);
-            this.btnMenu.TabIndex = 7;
-            this.btnMenu.Text = "Back to Menu";
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            btnMenu.Location = new Point(13, 13);
+            btnMenu.Margin = new Padding(2);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(89, 35);
+            btnMenu.TabIndex = 7;
+            btnMenu.Text = "Back to Menu";
+            btnMenu.UseVisualStyleBackColor = true;
+            btnMenu.Click += btnMenu_Click;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(553, 492);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(127, 59);
-            this.btnNext.TabIndex = 6;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            btnNext.Location = new Point(387, 295);
+            btnNext.Margin = new Padding(2);
+            btnNext.Name = "btnNext";
+            btnNext.Size = new Size(89, 35);
+            btnNext.TabIndex = 6;
+            btnNext.Text = "Next";
+            btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 287);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "DNi";
+            label2.AutoSize = true;
+            label2.Location = new Point(68, 172);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(27, 15);
+            label2.TabIndex = 5;
+            label2.Text = "DNi";
             // 
             // textBoxDays
             // 
-            this.textBoxDays.Location = new System.Drawing.Point(444, 329);
-            this.textBoxDays.Name = "textBoxDays";
-            this.textBoxDays.Size = new System.Drawing.Size(83, 31);
-            this.textBoxDays.TabIndex = 4;
+            textBoxDays.Location = new Point(311, 197);
+            textBoxDays.Margin = new Padding(2);
+            textBoxDays.Name = "textBoxDays";
+            textBoxDays.Size = new Size(59, 23);
+            textBoxDays.TabIndex = 4;
             // 
             // trackBarDays
             // 
-            this.trackBarDays.LargeChange = 1;
-            this.trackBarDays.Location = new System.Drawing.Point(94, 319);
-            this.trackBarDays.Maximum = 30;
-            this.trackBarDays.Name = "trackBarDays";
-            this.trackBarDays.Size = new System.Drawing.Size(281, 69);
-            this.trackBarDays.SmallChange = 0;
-            this.trackBarDays.TabIndex = 3;
-            this.trackBarDays.Scroll += new System.EventHandler(this.Form1_Load);
+            trackBarDays.LargeChange = 1;
+            trackBarDays.Location = new Point(66, 191);
+            trackBarDays.Margin = new Padding(2);
+            trackBarDays.Maximum = 30;
+            trackBarDays.Name = "trackBarDays";
+            trackBarDays.Size = new Size(197, 45);
+            trackBarDays.SmallChange = 0;
+            trackBarDays.TabIndex = 3;
+            trackBarDays.Scroll += Form1_Load;
             // 
             // Budget
             // 
-            this.Budget.AutoSize = true;
-            this.Budget.Location = new System.Drawing.Point(88, 118);
-            this.Budget.Name = "Budget";
-            this.Budget.Size = new System.Drawing.Size(69, 25);
-            this.Budget.TabIndex = 2;
-            this.Budget.Text = "Budget";
+            Budget.AutoSize = true;
+            Budget.Location = new Point(62, 71);
+            Budget.Margin = new Padding(2, 0, 2, 0);
+            Budget.Name = "Budget";
+            Budget.Size = new Size(45, 15);
+            Budget.TabIndex = 2;
+            Budget.Text = "Budget";
             // 
             // textBoxBudget
             // 
-            this.textBoxBudget.Location = new System.Drawing.Point(428, 160);
-            this.textBoxBudget.Name = "textBoxBudget";
-            this.textBoxBudget.Size = new System.Drawing.Size(83, 31);
-            this.textBoxBudget.TabIndex = 1;
+            textBoxBudget.Location = new Point(300, 96);
+            textBoxBudget.Margin = new Padding(2);
+            textBoxBudget.Name = "textBoxBudget";
+            textBoxBudget.Size = new Size(59, 23);
+            textBoxBudget.TabIndex = 1;
             // 
             // trackBarBudget
             // 
-            this.trackBarBudget.LargeChange = 100;
-            this.trackBarBudget.Location = new System.Drawing.Point(88, 150);
-            this.trackBarBudget.Maximum = 2000;
-            this.trackBarBudget.Name = "trackBarBudget";
-            this.trackBarBudget.Size = new System.Drawing.Size(281, 69);
-            this.trackBarBudget.SmallChange = 50;
-            this.trackBarBudget.TabIndex = 0;
-            this.trackBarBudget.Scroll += new System.EventHandler(this.Form1_Load);
+            trackBarBudget.LargeChange = 100;
+            trackBarBudget.Location = new Point(62, 90);
+            trackBarBudget.Margin = new Padding(2);
+            trackBarBudget.Maximum = 2000;
+            trackBarBudget.Name = "trackBarBudget";
+            trackBarBudget.Size = new Size(197, 45);
+            trackBarBudget.SmallChange = 50;
+            trackBarBudget.TabIndex = 0;
+            trackBarBudget.Scroll += Form1_Load;
             // 
             // pnlByChoice2
             // 
-            this.pnlByChoice2.Controls.Add(this.checkBoxOutdoor);
-            this.pnlByChoice2.Controls.Add(this.checkBoxSports);
-            this.pnlByChoice2.Controls.Add(this.label5);
-            this.pnlByChoice2.Controls.Add(this.label4);
-            this.pnlByChoice2.Controls.Add(this.radioButtonCold);
-            this.pnlByChoice2.Controls.Add(this.radioButtonDoesntMatter);
-            this.pnlByChoice2.Controls.Add(this.radioButtonWarm);
-            this.pnlByChoice2.Controls.Add(this.checkBoxShopping);
-            this.pnlByChoice2.Controls.Add(this.checkBoxSportsEvents);
-            this.pnlByChoice2.Controls.Add(this.checkBoxCulture);
-            this.pnlByChoice2.Controls.Add(this.label3);
-            this.pnlByChoice2.Location = new System.Drawing.Point(244, 18);
-            this.pnlByChoice2.Name = "pnlByChoice2";
-            this.pnlByChoice2.Size = new System.Drawing.Size(729, 603);
-            this.pnlByChoice2.TabIndex = 10;
-            this.pnlByChoice2.Visible = false;
+            pnlByChoice2.Controls.Add(checkBoxOutdoor);
+            pnlByChoice2.Controls.Add(checkBoxSports);
+            pnlByChoice2.Controls.Add(label5);
+            pnlByChoice2.Controls.Add(label4);
+            pnlByChoice2.Controls.Add(radioButtonCold);
+            pnlByChoice2.Controls.Add(radioButtonDoesntMatter);
+            pnlByChoice2.Controls.Add(radioButtonWarm);
+            pnlByChoice2.Controls.Add(checkBoxShopping);
+            pnlByChoice2.Controls.Add(checkBoxSportsEvents);
+            pnlByChoice2.Controls.Add(checkBoxCulture);
+            pnlByChoice2.Controls.Add(label3);
+            pnlByChoice2.Location = new Point(172, 7);
+            pnlByChoice2.Margin = new Padding(2);
+            pnlByChoice2.Name = "pnlByChoice2";
+            pnlByChoice2.Size = new Size(510, 362);
+            pnlByChoice2.TabIndex = 10;
+            pnlByChoice2.Visible = false;
             // 
             // checkBoxOutdoor
             // 
-            this.checkBoxOutdoor.AutoSize = true;
-            this.checkBoxOutdoor.Location = new System.Drawing.Point(309, 381);
-            this.checkBoxOutdoor.Name = "checkBoxOutdoor";
-            this.checkBoxOutdoor.Size = new System.Drawing.Size(176, 29);
-            this.checkBoxOutdoor.TabIndex = 10;
-            this.checkBoxOutdoor.Text = "outdoor activities";
-            this.checkBoxOutdoor.UseVisualStyleBackColor = true;
+            checkBoxOutdoor.AutoSize = true;
+            checkBoxOutdoor.Location = new Point(216, 229);
+            checkBoxOutdoor.Margin = new Padding(2);
+            checkBoxOutdoor.Name = "checkBoxOutdoor";
+            checkBoxOutdoor.Size = new Size(118, 19);
+            checkBoxOutdoor.TabIndex = 10;
+            checkBoxOutdoor.Text = "outdoor activities";
+            checkBoxOutdoor.UseVisualStyleBackColor = true;
             // 
             // checkBoxSports
             // 
-            this.checkBoxSports.AutoSize = true;
-            this.checkBoxSports.Location = new System.Drawing.Point(93, 377);
-            this.checkBoxSports.Name = "checkBoxSports";
-            this.checkBoxSports.Size = new System.Drawing.Size(160, 29);
-            this.checkBoxSports.TabIndex = 9;
-            this.checkBoxSports.Text = "sports activities";
-            this.checkBoxSports.UseVisualStyleBackColor = true;
+            checkBoxSports.AutoSize = true;
+            checkBoxSports.Location = new Point(65, 226);
+            checkBoxSports.Margin = new Padding(2);
+            checkBoxSports.Name = "checkBoxSports";
+            checkBoxSports.Size = new Size(107, 19);
+            checkBoxSports.TabIndex = 9;
+            checkBoxSports.Text = "sports activities";
+            checkBoxSports.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(188, 383);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 25);
-            this.label5.TabIndex = 8;
+            label5.AutoSize = true;
+            label5.Location = new Point(132, 230);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 15);
+            label5.TabIndex = 8;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 236);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "activities";
+            label4.AutoSize = true;
+            label4.Location = new Point(69, 142);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(53, 15);
+            label4.TabIndex = 7;
+            label4.Text = "activities";
             // 
             // radioButtonCold
             // 
-            this.radioButtonCold.AutoSize = true;
-            this.radioButtonCold.Location = new System.Drawing.Point(177, 150);
-            this.radioButtonCold.Name = "radioButtonCold";
-            this.radioButtonCold.Size = new System.Drawing.Size(71, 29);
-            this.radioButtonCold.TabIndex = 6;
-            this.radioButtonCold.Text = "cold";
-            this.radioButtonCold.UseVisualStyleBackColor = true;
+            radioButtonCold.AutoSize = true;
+            radioButtonCold.Location = new Point(124, 90);
+            radioButtonCold.Margin = new Padding(2);
+            radioButtonCold.Name = "radioButtonCold";
+            radioButtonCold.Size = new Size(48, 19);
+            radioButtonCold.TabIndex = 6;
+            radioButtonCold.Text = "cold";
+            radioButtonCold.UseVisualStyleBackColor = true;
             // 
             // radioButtonDoesntMatter
             // 
-            this.radioButtonDoesntMatter.AutoSize = true;
-            this.radioButtonDoesntMatter.Location = new System.Drawing.Point(265, 153);
-            this.radioButtonDoesntMatter.Name = "radioButtonDoesntMatter";
-            this.radioButtonDoesntMatter.Size = new System.Drawing.Size(153, 29);
-            this.radioButtonDoesntMatter.TabIndex = 5;
-            this.radioButtonDoesntMatter.Text = "doesn\'t matter";
-            this.radioButtonDoesntMatter.UseVisualStyleBackColor = true;
+            radioButtonDoesntMatter.AutoSize = true;
+            radioButtonDoesntMatter.Location = new Point(186, 92);
+            radioButtonDoesntMatter.Margin = new Padding(2);
+            radioButtonDoesntMatter.Name = "radioButtonDoesntMatter";
+            radioButtonDoesntMatter.Size = new Size(102, 19);
+            radioButtonDoesntMatter.TabIndex = 5;
+            radioButtonDoesntMatter.Text = "doesn't matter";
+            radioButtonDoesntMatter.UseVisualStyleBackColor = true;
             // 
             // radioButtonWarm
             // 
-            this.radioButtonWarm.AutoSize = true;
-            this.radioButtonWarm.Location = new System.Drawing.Point(85, 149);
-            this.radioButtonWarm.Name = "radioButtonWarm";
-            this.radioButtonWarm.Size = new System.Drawing.Size(81, 29);
-            this.radioButtonWarm.TabIndex = 4;
-            this.radioButtonWarm.Text = "warm";
-            this.radioButtonWarm.UseVisualStyleBackColor = true;
+            radioButtonWarm.AutoSize = true;
+            radioButtonWarm.Location = new Point(60, 89);
+            radioButtonWarm.Margin = new Padding(2);
+            radioButtonWarm.Name = "radioButtonWarm";
+            radioButtonWarm.Size = new Size(55, 19);
+            radioButtonWarm.TabIndex = 4;
+            radioButtonWarm.Text = "warm";
+            radioButtonWarm.UseVisualStyleBackColor = true;
             // 
             // checkBoxShopping
             // 
-            this.checkBoxShopping.AutoSize = true;
-            this.checkBoxShopping.Location = new System.Drawing.Point(335, 293);
-            this.checkBoxShopping.Name = "checkBoxShopping";
-            this.checkBoxShopping.Size = new System.Drawing.Size(114, 29);
-            this.checkBoxShopping.TabIndex = 3;
-            this.checkBoxShopping.Text = "shopping";
-            this.checkBoxShopping.UseVisualStyleBackColor = true;
+            checkBoxShopping.AutoSize = true;
+            checkBoxShopping.Location = new Point(234, 176);
+            checkBoxShopping.Margin = new Padding(2);
+            checkBoxShopping.Name = "checkBoxShopping";
+            checkBoxShopping.Size = new Size(76, 19);
+            checkBoxShopping.TabIndex = 3;
+            checkBoxShopping.Text = "shopping";
+            checkBoxShopping.UseVisualStyleBackColor = true;
             // 
             // checkBoxSportsEvents
             // 
-            this.checkBoxSportsEvents.AutoSize = true;
-            this.checkBoxSportsEvents.Location = new System.Drawing.Point(193, 292);
-            this.checkBoxSportsEvents.Name = "checkBoxSportsEvents";
-            this.checkBoxSportsEvents.Size = new System.Drawing.Size(144, 29);
-            this.checkBoxSportsEvents.TabIndex = 2;
-            this.checkBoxSportsEvents.Text = "sports events";
-            this.checkBoxSportsEvents.UseVisualStyleBackColor = true;
+            checkBoxSportsEvents.AutoSize = true;
+            checkBoxSportsEvents.Location = new Point(135, 175);
+            checkBoxSportsEvents.Margin = new Padding(2);
+            checkBoxSportsEvents.Name = "checkBoxSportsEvents";
+            checkBoxSportsEvents.Size = new Size(95, 19);
+            checkBoxSportsEvents.TabIndex = 2;
+            checkBoxSportsEvents.Text = "sports events";
+            checkBoxSportsEvents.UseVisualStyleBackColor = true;
             // 
             // checkBoxCulture
             // 
-            this.checkBoxCulture.AutoSize = true;
-            this.checkBoxCulture.Location = new System.Drawing.Point(88, 290);
-            this.checkBoxCulture.Name = "checkBoxCulture";
-            this.checkBoxCulture.Size = new System.Drawing.Size(91, 29);
-            this.checkBoxCulture.TabIndex = 1;
-            this.checkBoxCulture.Text = "culture";
-            this.checkBoxCulture.UseVisualStyleBackColor = true;
+            checkBoxCulture.AutoSize = true;
+            checkBoxCulture.Location = new Point(62, 174);
+            checkBoxCulture.Margin = new Padding(2);
+            checkBoxCulture.Name = "checkBoxCulture";
+            checkBoxCulture.Size = new Size(63, 19);
+            checkBoxCulture.TabIndex = 1;
+            checkBoxCulture.Text = "culture";
+            checkBoxCulture.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Climate";
+            label3.AutoSize = true;
+            label3.Location = new Point(59, 61);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(48, 15);
+            label3.TabIndex = 0;
+            label3.Text = "Climate";
+            // 
+            // pnlContactUs
+            // 
+            pnlContactUs.Controls.Add(txtBoxSubject);
+            pnlContactUs.Controls.Add(btnSendEmail);
+            pnlContactUs.Controls.Add(txtboxEmail);
+            pnlContactUs.Controls.Add(label12);
+            pnlContactUs.Controls.Add(label11);
+            pnlContactUs.Controls.Add(label10);
+            pnlContactUs.Controls.Add(label9);
+            pnlContactUs.Controls.Add(label8);
+            pnlContactUs.Controls.Add(label7);
+            pnlContactUs.Controls.Add(label6);
+            pnlContactUs.Controls.Add(btnBackToMenuContactUs);
+            pnlContactUs.Location = new Point(166, 7);
+            pnlContactUs.Name = "pnlContactUs";
+            pnlContactUs.Size = new Size(509, 360);
+            pnlContactUs.TabIndex = 11;
+            pnlContactUs.Visible = false;
+            // 
+            // txtBoxSubject
+            // 
+            txtBoxSubject.Location = new Point(240, 116);
+            txtBoxSubject.Name = "txtBoxSubject";
+            txtBoxSubject.Size = new Size(95, 23);
+            txtBoxSubject.TabIndex = 10;
+            txtBoxSubject.TextChanged += txtBoxSubject_TextChanged;
+            // 
+            // btnSendEmail
+            // 
+            btnSendEmail.Location = new Point(410, 266);
+            btnSendEmail.Name = "btnSendEmail";
+            btnSendEmail.Size = new Size(55, 26);
+            btnSendEmail.TabIndex = 9;
+            btnSendEmail.Text = "Send";
+            btnSendEmail.UseVisualStyleBackColor = true;
+            btnSendEmail.Click += btnSendEmail_Click;
+            // 
+            // txtboxEmail
+            // 
+            txtboxEmail.Location = new Point(240, 148);
+            txtboxEmail.Multiline = true;
+            txtboxEmail.Name = "txtboxEmail";
+            txtboxEmail.Size = new Size(225, 112);
+            txtboxEmail.TabIndex = 8;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(340, 300);
+            label12.Name = "label12";
+            label12.Size = new Size(155, 60);
+            label12.TabIndex = 7;
+            label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiqn Dimitrov first year\r\nVanesa Lombardo first year\r\n";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(18, 247);
+            label11.Name = "label11";
+            label11.Size = new Size(155, 15);
+            label11.TabIndex = 6;
+            label11.Text = "vanessalombrd@gmail.com";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(18, 207);
+            label10.Name = "label10";
+            label10.Size = new Size(167, 15);
+            label10.TabIndex = 5;
+            label10.Text = "dimitrovdiyan987@gmail.com";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(18, 162);
+            label9.Name = "label9";
+            label9.Size = new Size(166, 15);
+            label9.TabIndex = 4;
+            label9.Text = "lachezarradushev@gmail.com";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(15, 127);
+            label8.Name = "label8";
+            label8.Size = new Size(71, 15);
+            label8.TabIndex = 3;
+            label8.Text = "Contact Us :";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(11, 44);
+            label7.Name = "label7";
+            label7.Size = new Size(445, 75);
+            label7.TabIndex = 2;
+            label7.Text = "Welcome to Our App! We would like to help you find a suitable destination for you.\r\nWe hope that the selected destination fits yours standarts!\r\n\r\n\r\n\r\n";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(11, 21);
+            label6.Name = "label6";
+            label6.Size = new Size(67, 15);
+            label6.TabIndex = 1;
+            label6.Text = "Description";
+            // 
+            // btnBackToMenuContactUs
+            // 
+            btnBackToMenuContactUs.Location = new Point(11, 299);
+            btnBackToMenuContactUs.Name = "btnBackToMenuContactUs";
+            btnBackToMenuContactUs.Size = new Size(106, 41);
+            btnBackToMenuContactUs.TabIndex = 0;
+            btnBackToMenuContactUs.Text = "Back To Menu";
+            btnBackToMenuContactUs.UseVisualStyleBackColor = true;
+            btnBackToMenuContactUs.Click += btnBackToMenuContactUs_Click;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1002, 664);
-            this.Controls.Add(this.pnlByChoice2);
-            this.Controls.Add(this.pnlByCh);
-            this.Controls.Add(this.pnlCompare);
-            this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.sidePanel);
-            this.Controls.Add(this.pnlRandom);
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.pnlMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).EndInit();
-            this.sidePanel.ResumeLayout(false);
-            this.sidePanel.PerformLayout();
-            this.pnlRandom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataRandom)).EndInit();
-            this.pnlCompare.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).EndInit();
-            this.pnlByCh.ResumeLayout(false);
-            this.pnlByCh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).EndInit();
-            this.pnlByChoice2.ResumeLayout(false);
-            this.pnlByChoice2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
+            ClientSize = new Size(701, 398);
+            Controls.Add(pnlContactUs);
+            Controls.Add(pnlByChoice2);
+            Controls.Add(pnlByCh);
+            Controls.Add(pnlCompare);
+            Controls.Add(pnlMenu);
+            Controls.Add(label1);
+            Controls.Add(sidePanel);
+            Controls.Add(pnlRandom);
+            Margin = new Padding(2);
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconProfile).EndInit();
+            sidePanel.ResumeLayout(false);
+            sidePanel.PerformLayout();
+            pnlRandom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataRandom).EndInit();
+            pnlCompare.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataSecondC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataOneC).EndInit();
+            pnlByCh.ResumeLayout(false);
+            pnlByCh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarDays).EndInit();
+            ((System.ComponentModel.ISupportInitialize)trackBarBudget).EndInit();
+            pnlByChoice2.ResumeLayout(false);
+            pnlByChoice2.PerformLayout();
+            pnlContactUs.ResumeLayout(false);
+            pnlContactUs.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -758,5 +952,18 @@
         private CheckBox checkBoxSportsEvents;
         private CheckBox checkBoxCulture;
         private Label label3;
+        private Panel pnlContactUs;
+        private Button btnBackToMenuContactUs;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Button btnSendEmail;
+        private TextBox txtboxEmail;
+        private TextBox txtBoxSubject;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

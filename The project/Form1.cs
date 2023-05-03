@@ -1,4 +1,7 @@
+using System.Net.Mail;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Net;
 
 namespace The_project
 {
@@ -7,7 +10,7 @@ namespace The_project
         public Form1(string userName)
         {
             InitializeComponent();
-            this.FormBorderStyle=FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.Size = new Size(1024, 720);
             this.BackColor = Color.FromArgb(20, 69, 82);
             sidePanel.BackColor = Color.FromArgb(27, 58, 75);
@@ -15,14 +18,14 @@ namespace The_project
             btnExit.Location = new Point(62, Bottom);
             labelName.Text = userName;
             labelName.ForeColor = Color.White;
-           // topPanel.BackColor = Color.FromArgb(20, 69, 83);
+            // topPanel.BackColor = Color.FromArgb(20, 69, 83);
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
             this.showLess.Click += new EventHandler(this.showLess_Click);
-           // this.Cursor += new EventHandler(this.cursorChange_Mouse);
-           // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
+            // this.Cursor += new EventHandler(this.cursorChange_Mouse);
+            // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
         }
 
-      
+
 
         Button showLess = new Button();
 
@@ -31,7 +34,7 @@ namespace The_project
             sidePanel.Size = new Size(300, Bottom);
             showMore.Hide();
             showLess.Show();
-            showLess.Size = new Size(showMore.Size.Width,showMore.Size.Height);
+            showLess.Size = new Size(showMore.Size.Width, showMore.Size.Height);
             labelName.Location = new Point(82, 102);
             showLess.Location = new Point(6, 12);
             showLess.FlatStyle = FlatStyle.Flat;
@@ -73,7 +76,7 @@ namespace The_project
 
         private void iconProfile_Click(object sender, EventArgs e)
         {
-            iconProfile.BackColor=Color.Transparent;
+            iconProfile.BackColor = Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -87,7 +90,7 @@ namespace The_project
         {
             pnlRandom.Show();
             pnlMenu.Hide();
-       }
+        }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
@@ -126,9 +129,9 @@ namespace The_project
         {
             pnlMenu.Visible = true;
             pnlCompare.Visible = false;
-            combOneC.Location = new Point(118,207);
-            combSecondC.Location = new Point(479,207);
-            btnComparee.Location = new Point(284,318);
+            combOneC.Location = new Point(118, 207);
+            combSecondC.Location = new Point(479, 207);
+            btnComparee.Location = new Point(284, 318);
             dataOneC.Visible = false;
             dataSecondC.Visible = false;
         }
@@ -140,8 +143,8 @@ namespace The_project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBoxBudget.Text=trackBarBudget.Value.ToString();
-            textBoxBudget.Text+=" lv";
+            textBoxBudget.Text = trackBarBudget.Value.ToString();
+            textBoxBudget.Text += " lv";
             textBoxDays.Text = trackBarDays.Value.ToString();
             if (trackBarDays.Value.ToString() == "1")
             {
@@ -151,7 +154,7 @@ namespace The_project
             {
                 textBoxDays.Text += " days";
             }
-            if (radioButtonWarm.Checked==true)
+            if (radioButtonWarm.Checked == true)
             {
                 checkBoxSports.Text = "Skiing/Snowboarding";
             }
@@ -166,7 +169,36 @@ namespace The_project
         private void btnNext_Click(object sender, EventArgs e)
         {
             pnlByChoice2.Visible = true;
-            pnlByCh.Visible=false;
+            pnlByCh.Visible = false;
+        }
+
+        private void btnContactUs_Click(object sender, EventArgs e)
+        {
+            pnlContactUs.Visible = true;
+            pnlMenu.Hide();
+            pnlContactUs.Show();
+            txtBoxSubject.PlaceholderText = "Subject";
+
+        }
+
+
+        private void btnBackToMenuContactUs_Click(object sender, EventArgs e)
+        {
+            pnlContactUs.Visible = false;
+            pnlContactUs.Hide();
+            pnlMenu.Show();
+        }
+
+        private void btnSendEmail_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Email has been sent.");
+            txtBoxSubject.Clear();
+            txtboxEmail.Clear();
+        }
+
+        private void txtBoxSubject_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
