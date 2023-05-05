@@ -1,4 +1,4 @@
-using System.Net.Mail;
+﻿using System.Net.Mail;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Net;
@@ -25,7 +25,7 @@ namespace The_project
             // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
         }
 
-
+        
 
         Button showLess = new Button();
 
@@ -198,6 +198,41 @@ namespace The_project
         {
             pnlMenu.Hide();
             pnlByCh.Visible = true;
+        }
+
+        private void btnBackToMenuSearch_Click(object sender, EventArgs e)
+        {
+            pnlSearch.Visible = false;
+            pnlMenu.Visible = true;
+        }
+
+        private void pnlSearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Visible = false;
+            pnlSearch.Visible = true;
+            pictureBoxSearch.Visible = true;
+            pictureBoxSearchSecondImage.Visible = true;
+            pictureBoxSearchThirdImage.Visible = true;
+            Graphics g = Graphics.FromHwnd(pictureBoxSearch.Handle);
+            imgList.Images.Add(Image.FromFile(@"C:\Users\dimit\OneDrive\Работен плот\Durjavi\Bulgaria.png"));
+            imgList.Images.Add(Image.FromFile(@"C:\Users\dimit\OneDrive\Работен плот\Durjavi\Finland.png"));
+            imgList.Images.Add(Image.FromFile(@"C:\Users\dimit\OneDrive\Работен плот\Durjavi\Greece.png"));
+            imgList.ImageSize = new Size(380, 380);
+            pictureBoxSearch.Image = imgList.Images[0];
+            pictureBoxSearchSecondImage.Image = imgList.Images[1];
+            pictureBoxSearchThirdImage.Image= imgList.Images[2];
+        }
+
+        private void btnSearchinSearch_Click(object sender, EventArgs e)
+        {
+            pictureBoxSearch.Visible = false;
+            pictureBoxSearchSecondImage.Visible = false;
+            pictureBoxSearchThirdImage.Visible = false;
         }
     }
 }

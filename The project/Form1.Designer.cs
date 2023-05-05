@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnRandom = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -94,7 +94,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnBackToMenuContactUs = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.pnlSearch = new System.Windows.Forms.Panel();
+            this.pictureBoxSearchThirdImage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearchSecondImage = new System.Windows.Forms.PictureBox();
+            this.btnBackToMenuSearch = new System.Windows.Forms.Button();
+            this.pictureBoxSearch = new System.Windows.Forms.PictureBox();
+            this.btnSearchinSearch = new System.Windows.Forms.Button();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -112,6 +119,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).BeginInit();
             this.pnlByChoice2.SuspendLayout();
             this.pnlContactUs.SuspendLayout();
+            this.pnlSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -137,22 +148,23 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Location = new System.Drawing.Point(334, 42);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(324, 193);
             this.panel2.TabIndex = 5;
             // 
-            // button2
+            // btnSearch
             // 
-            this.button2.Image = global::The_project.Properties.Resources.output_onlinegiftools;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(77, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 73);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Search by data \r\nfor country\r\n";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.Location = new System.Drawing.Point(77, 38);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(186, 73);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search by data \r\nfor country\r\n";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel3
             // 
@@ -803,11 +815,84 @@
             this.btnBackToMenuContactUs.Text = "Back To Menu";
             this.btnBackToMenuContactUs.UseVisualStyleBackColor = true;
             // 
-            // contextMenuStrip1
+            // pnlSearch
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.pnlSearch.Controls.Add(this.pictureBoxSearchThirdImage);
+            this.pnlSearch.Controls.Add(this.pictureBoxSearchSecondImage);
+            this.pnlSearch.Controls.Add(this.btnBackToMenuSearch);
+            this.pnlSearch.Controls.Add(this.pictureBoxSearch);
+            this.pnlSearch.Controls.Add(this.btnSearchinSearch);
+            this.pnlSearch.Controls.Add(this.textBoxSearch);
+            this.pnlSearch.Location = new System.Drawing.Point(246, 12);
+            this.pnlSearch.Name = "pnlSearch";
+            this.pnlSearch.Size = new System.Drawing.Size(730, 585);
+            this.pnlSearch.TabIndex = 12;
+            this.pnlSearch.Visible = false;
+            this.pnlSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSearch_Paint);
+            // 
+            // pictureBoxSearchThirdImage
+            // 
+            this.pictureBoxSearchThirdImage.Location = new System.Drawing.Point(475, 130);
+            this.pictureBoxSearchThirdImage.Name = "pictureBoxSearchThirdImage";
+            this.pictureBoxSearchThirdImage.Size = new System.Drawing.Size(268, 379);
+            this.pictureBoxSearchThirdImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSearchThirdImage.TabIndex = 7;
+            this.pictureBoxSearchThirdImage.TabStop = false;
+            // 
+            // pictureBoxSearchSecondImage
+            // 
+            this.pictureBoxSearchSecondImage.Location = new System.Drawing.Point(217, 154);
+            this.pictureBoxSearchSecondImage.Name = "pictureBoxSearchSecondImage";
+            this.pictureBoxSearchSecondImage.Size = new System.Drawing.Size(292, 379);
+            this.pictureBoxSearchSecondImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSearchSecondImage.TabIndex = 6;
+            this.pictureBoxSearchSecondImage.TabStop = false;
+            // 
+            // btnBackToMenuSearch
+            // 
+            this.btnBackToMenuSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnBackToMenuSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBackToMenuSearch.Location = new System.Drawing.Point(12, 6);
+            this.btnBackToMenuSearch.Name = "btnBackToMenuSearch";
+            this.btnBackToMenuSearch.Size = new System.Drawing.Size(119, 35);
+            this.btnBackToMenuSearch.TabIndex = 5;
+            this.btnBackToMenuSearch.Text = "Menu";
+            this.btnBackToMenuSearch.UseVisualStyleBackColor = true;
+            this.btnBackToMenuSearch.Click += new System.EventHandler(this.btnBackToMenuSearch_Click);
+            // 
+            // pictureBoxSearch
+            // 
+            this.pictureBoxSearch.Location = new System.Drawing.Point(-26, 130);
+            this.pictureBoxSearch.Name = "pictureBoxSearch";
+            this.pictureBoxSearch.Size = new System.Drawing.Size(279, 379);
+            this.pictureBoxSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSearch.TabIndex = 4;
+            this.pictureBoxSearch.TabStop = false;
+            // 
+            // btnSearchinSearch
+            // 
+            this.btnSearchinSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnSearchinSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearchinSearch.Location = new System.Drawing.Point(567, 58);
+            this.btnSearchinSearch.Name = "btnSearchinSearch";
+            this.btnSearchinSearch.Size = new System.Drawing.Size(119, 35);
+            this.btnSearchinSearch.TabIndex = 1;
+            this.btnSearchinSearch.Text = "Search";
+            this.btnSearchinSearch.UseVisualStyleBackColor = true;
+            this.btnSearchinSearch.Click += new System.EventHandler(this.btnSearchinSearch_Click);
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.Location = new System.Drawing.Point(67, 62);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(475, 31);
+            this.textBoxSearch.TabIndex = 0;
+            // 
+            // imgList
+            // 
+            this.imgList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imgList.ImageSize = new System.Drawing.Size(16, 16);
+            this.imgList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Form1
             // 
@@ -815,6 +900,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1001, 663);
+            this.Controls.Add(this.pnlSearch);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlContactUs);
             this.Controls.Add(this.pnlByChoice2);
@@ -847,6 +933,11 @@
             this.pnlByChoice2.PerformLayout();
             this.pnlContactUs.ResumeLayout(false);
             this.pnlContactUs.PerformLayout();
+            this.pnlSearch.ResumeLayout(false);
+            this.pnlSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -859,7 +950,7 @@
         private Panel panel3;
         private Panel panel4;
         private Button button1;
-        private Button button2;
+        private Button btnSearch;
         private Button btnRandom;
         private Button btnCompare;
         private Panel pnlMenu;
@@ -917,6 +1008,13 @@
         private Button btnSendEmail;
         private TextBox txtboxEmail;
         private TextBox txtBoxSubject;
-        private ContextMenuStrip contextMenuStrip1;
+        private Panel pnlSearch;
+        private Button btnBackToMenuSearch;
+        private PictureBox pictureBoxSearch;
+        private Button btnSearchinSearch;
+        private TextBox textBoxSearch;
+        private ImageList imgList;
+        private PictureBox pictureBoxSearchThirdImage;
+        private PictureBox pictureBoxSearchSecondImage;
     }
 }
