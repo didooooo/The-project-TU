@@ -79,13 +79,6 @@ namespace The_project
             iconProfile.BackColor = Color.Transparent;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pnlMenu.Hide();
-            pnlByCh.Visible = true;
-
-        }
-
         private void btnRandom_Click(object sender, EventArgs e)
         {
             pnlRandom.Show();
@@ -199,6 +192,12 @@ namespace The_project
         private void txtBoxSubject_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Hide();
+            pnlByCh.Visible = true;
         }
     }
 }
