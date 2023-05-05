@@ -885,6 +885,7 @@
             // 
             this.textBoxSearch.Location = new System.Drawing.Point(67, 62);
             this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.PlaceholderText = " Search country";
             this.textBoxSearch.Size = new System.Drawing.Size(475, 31);
             this.textBoxSearch.TabIndex = 0;
             // 

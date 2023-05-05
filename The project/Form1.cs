@@ -189,10 +189,6 @@ namespace The_project
             txtboxEmail.Clear();
         }
 
-        private void txtBoxSubject_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
