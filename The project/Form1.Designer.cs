@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             button1 = new Button();
             panel2 = new Panel();
@@ -40,7 +39,6 @@
             btnCompare = new Button();
             label1 = new Label();
             pnlMenu = new Panel();
-            showMore = new Button();
             iconProfile = new PictureBox();
             btnDashboard = new Button();
             btnContactUs = new Button();
@@ -189,6 +187,7 @@
             btnRandom.TabIndex = 9;
             btnRandom.Text = "Generate random \r\ncountry\r\n";
             btnRandom.UseVisualStyleBackColor = true;
+            btnRandom.Click += btnRandom_Click;
             // 
             // panel4
             // 
@@ -210,6 +209,7 @@
             btnCompare.TabIndex = 10;
             btnCompare.Text = "Compare countries\r\n";
             btnCompare.UseVisualStyleBackColor = true;
+            btnCompare.Click += btnCompare_Click;
             // 
             // label1
             // 
@@ -234,29 +234,15 @@
             pnlMenu.Size = new Size(494, 274);
             pnlMenu.TabIndex = 6;
             // 
-            // showMore
-            // 
-            showMore.BackgroundImage = (Image)resources.GetObject("showMore.BackgroundImage");
-            showMore.BackgroundImageLayout = ImageLayout.Zoom;
-            showMore.FlatAppearance.BorderSize = 0;
-            showMore.FlatStyle = FlatStyle.Flat;
-            showMore.Font = new Font("Showcard Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            showMore.Location = new Point(4, 7);
-            showMore.Margin = new Padding(2);
-            showMore.Name = "showMore";
-            showMore.Size = new Size(25, 20);
-            showMore.TabIndex = 2;
-            showMore.UseVisualStyleBackColor = true;
-            // 
             // iconProfile
             // 
             iconProfile.ErrorImage = null;
             iconProfile.Image = Properties.Resources.user;
             iconProfile.InitialImage = null;
-            iconProfile.Location = new Point(43, 7);
+            iconProfile.Location = new Point(29, 11);
             iconProfile.Margin = new Padding(2);
             iconProfile.Name = "iconProfile";
-            iconProfile.Size = new Size(69, 52);
+            iconProfile.Size = new Size(75, 52);
             iconProfile.SizeMode = PictureBoxSizeMode.Zoom;
             iconProfile.TabIndex = 3;
             iconProfile.TabStop = false;
@@ -296,6 +282,7 @@
             btnContactUs.TabIndex = 5;
             btnContactUs.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnContactUs.UseVisualStyleBackColor = true;
+            btnContactUs.Click += btnContactUs_Click;
             // 
             // btnReviews
             // 
@@ -318,16 +305,17 @@
             // btnExit
             // 
             btnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnExit.BackgroundImage = Properties.Resources.exit;
+            btnExit.BackgroundImageLayout = ImageLayout.Zoom;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
-            btnExit.Image = Properties.Resources.dashboard;
             btnExit.ImageAlign = ContentAlignment.MiddleLeft;
-            btnExit.Location = new Point(43, 342);
+            btnExit.Location = new Point(29, 336);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(38, 31);
+            btnExit.Size = new Size(52, 37);
             btnExit.TabIndex = 8;
             btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExit.UseVisualStyleBackColor = true;
@@ -350,7 +338,6 @@
             sidePanel.Controls.Add(btnContactUs);
             sidePanel.Controls.Add(btnDashboard);
             sidePanel.Controls.Add(iconProfile);
-            sidePanel.Controls.Add(showMore);
             sidePanel.Dock = DockStyle.Left;
             sidePanel.Location = new Point(0, 0);
             sidePanel.Margin = new Padding(2);
@@ -373,16 +360,21 @@
             // 
             // btnBackG
             // 
+            btnBackG.Image = Properties.Resources.output_onlinegiftools;
+            btnBackG.ImageAlign = ContentAlignment.MiddleRight;
             btnBackG.Location = new Point(26, 8);
             btnBackG.Margin = new Padding(2);
             btnBackG.Name = "btnBackG";
             btnBackG.Size = new Size(65, 19);
             btnBackG.TabIndex = 4;
-            btnBackG.Text = "back";
+            btnBackG.Text = "Menu";
             btnBackG.UseVisualStyleBackColor = true;
+            btnBackG.Click += btnBackG_Click;
             // 
             // btnAccept
             // 
+            btnAccept.Image = Properties.Resources.output_onlinegiftools;
+            btnAccept.ImageAlign = ContentAlignment.MiddleRight;
             btnAccept.Location = new Point(307, 182);
             btnAccept.Margin = new Padding(2);
             btnAccept.Name = "btnAccept";
@@ -391,9 +383,12 @@
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             btnAccept.Visible = false;
+            btnAccept.Click += btnAccept_Click;
             // 
             // btnGenerate
             // 
+            btnGenerate.Image = Properties.Resources.output_onlinegiftools;
+            btnGenerate.ImageAlign = ContentAlignment.MiddleRight;
             btnGenerate.Location = new Point(305, 123);
             btnGenerate.Margin = new Padding(2);
             btnGenerate.Name = "btnGenerate";
@@ -401,6 +396,7 @@
             btnGenerate.TabIndex = 1;
             btnGenerate.Text = "Generate";
             btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // dataRandom
             // 
@@ -472,6 +468,8 @@
             // 
             // btnComparee
             // 
+            btnComparee.Image = Properties.Resources.output_onlinegiftools;
+            btnComparee.ImageAlign = ContentAlignment.MiddleRight;
             btnComparee.Location = new Point(199, 191);
             btnComparee.Margin = new Padding(2);
             btnComparee.Name = "btnComparee";
@@ -479,16 +477,20 @@
             btnComparee.TabIndex = 1;
             btnComparee.Text = "Compare";
             btnComparee.UseVisualStyleBackColor = true;
+            btnComparee.Click += btnComparee_Click;
             // 
             // btnBackC
             // 
+            btnBackC.Image = Properties.Resources.output_onlinegiftools;
+            btnBackC.ImageAlign = ContentAlignment.MiddleRight;
             btnBackC.Location = new Point(2, 1);
             btnBackC.Margin = new Padding(2);
             btnBackC.Name = "btnBackC";
             btnBackC.Size = new Size(62, 26);
             btnBackC.TabIndex = 0;
-            btnBackC.Text = "back";
+            btnBackC.Text = "Menu";
             btnBackC.UseVisualStyleBackColor = true;
+            btnBackC.Click += btnBackC_Click;
             // 
             // pnlByCh
             // 
@@ -509,6 +511,8 @@
             // 
             // btnMenu
             // 
+            btnMenu.Image = Properties.Resources.output_onlinegiftools;
+            btnMenu.ImageAlign = ContentAlignment.MiddleRight;
             btnMenu.Location = new Point(13, 13);
             btnMenu.Margin = new Padding(2);
             btnMenu.Name = "btnMenu";
@@ -516,9 +520,12 @@
             btnMenu.TabIndex = 7;
             btnMenu.Text = "Back to Menu";
             btnMenu.UseVisualStyleBackColor = true;
+            btnMenu.Click += btnMenu_Click;
             // 
             // btnNext
             // 
+            btnNext.Image = Properties.Resources.output_onlinegiftools;
+            btnNext.ImageAlign = ContentAlignment.MiddleRight;
             btnNext.Location = new Point(387, 295);
             btnNext.Margin = new Padding(2);
             btnNext.Name = "btnNext";
@@ -526,6 +533,7 @@
             btnNext.TabIndex = 6;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // label2
             // 
@@ -533,17 +541,18 @@
             label2.Location = new Point(68, 172);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(27, 15);
+            label2.Size = new Size(25, 15);
             label2.TabIndex = 5;
-            label2.Text = "DNi";
+            label2.Text = "Dni";
             // 
             // textBoxDays
             // 
-            textBoxDays.Location = new Point(311, 197);
+            textBoxDays.Location = new Point(300, 196);
             textBoxDays.Margin = new Padding(2);
             textBoxDays.Name = "textBoxDays";
             textBoxDays.Size = new Size(59, 23);
             textBoxDays.TabIndex = 4;
+            textBoxDays.TextChanged += textBoxDays_TextChanged;
             // 
             // trackBarDays
             // 
@@ -555,6 +564,7 @@
             trackBarDays.Size = new Size(197, 45);
             trackBarDays.SmallChange = 0;
             trackBarDays.TabIndex = 3;
+            trackBarDays.ValueChanged += Form1_Load;
             // 
             // Budget
             // 
@@ -573,6 +583,7 @@
             textBoxBudget.Name = "textBoxBudget";
             textBoxBudget.Size = new Size(59, 23);
             textBoxBudget.TabIndex = 1;
+            textBoxBudget.TextChanged += textBoxBudget_TextChanged;
             // 
             // trackBarBudget
             // 
@@ -584,6 +595,7 @@
             trackBarBudget.Size = new Size(197, 45);
             trackBarBudget.SmallChange = 50;
             trackBarBudget.TabIndex = 0;
+            trackBarBudget.ValueChanged += Form1_Load;
             // 
             // pnlByChoice2
             // 
@@ -745,23 +757,28 @@
             // 
             txtBoxSubject.Location = new Point(240, 116);
             txtBoxSubject.Name = "txtBoxSubject";
+            txtBoxSubject.PlaceholderText = "Subject";
             txtBoxSubject.Size = new Size(95, 23);
             txtBoxSubject.TabIndex = 10;
             // 
             // btnSendEmail
             // 
+            btnSendEmail.Image = Properties.Resources.output_onlinegiftools;
+            btnSendEmail.ImageAlign = ContentAlignment.MiddleRight;
             btnSendEmail.Location = new Point(410, 266);
             btnSendEmail.Name = "btnSendEmail";
             btnSendEmail.Size = new Size(55, 26);
             btnSendEmail.TabIndex = 9;
             btnSendEmail.Text = "Send";
             btnSendEmail.UseVisualStyleBackColor = true;
+            btnSendEmail.Click += btnSendEmail_Click;
             // 
             // txtboxEmail
             // 
             txtboxEmail.Location = new Point(240, 148);
             txtboxEmail.Multiline = true;
             txtboxEmail.Name = "txtboxEmail";
+            txtboxEmail.PlaceholderText = "Write something here...";
             txtboxEmail.Size = new Size(225, 112);
             txtboxEmail.TabIndex = 8;
             // 
@@ -772,7 +789,7 @@
             label12.Name = "label12";
             label12.Size = new Size(155, 60);
             label12.TabIndex = 7;
-            label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiqn Dimitrov first year\r\nVanesa Lombardo first year\r\n";
+            label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiyan Dimitrov first year\r\nVanessa Lombardo first year\r\n";
             // 
             // label11
             // 
@@ -830,12 +847,15 @@
             // 
             // btnBackToMenuContactUs
             // 
+            btnBackToMenuContactUs.Image = Properties.Resources.output_onlinegiftools;
+            btnBackToMenuContactUs.ImageAlign = ContentAlignment.MiddleRight;
             btnBackToMenuContactUs.Location = new Point(11, 299);
             btnBackToMenuContactUs.Name = "btnBackToMenuContactUs";
             btnBackToMenuContactUs.Size = new Size(106, 41);
             btnBackToMenuContactUs.TabIndex = 0;
             btnBackToMenuContactUs.Text = "Back To Menu";
             btnBackToMenuContactUs.UseVisualStyleBackColor = true;
+            btnBackToMenuContactUs.Click += btnBackToMenuContactUs_Click;
             // 
             // pnlSearch
             // 
@@ -851,7 +871,6 @@
             pnlSearch.Size = new Size(511, 351);
             pnlSearch.TabIndex = 12;
             pnlSearch.Visible = false;
-            pnlSearch.Paint += pnlSearch_Paint;
             // 
             // pictureBoxSearchThirdImage
             // 
@@ -930,19 +949,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(701, 398);
-            Controls.Add(pnlSearch);
-            Controls.Add(pnlMenu);
-            Controls.Add(pnlContactUs);
-            Controls.Add(pnlByChoice2);
             Controls.Add(pnlByCh);
             Controls.Add(pnlCompare);
+            Controls.Add(pnlRandom);
+            Controls.Add(pnlMenu);
+            Controls.Add(pnlContactUs);
+            Controls.Add(pnlSearch);
+            Controls.Add(pnlByChoice2);
             Controls.Add(label1);
             Controls.Add(sidePanel);
-            Controls.Add(pnlRandom);
             Margin = new Padding(2);
             MaximizeBox = false;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -984,7 +1004,6 @@
         private Button btnRandom;
         private Button btnCompare;
         private Panel pnlMenu;
-        private Button showMore;
         private PictureBox iconProfile;
         private Button btnDashboard;
         private Button btnContactUs;
