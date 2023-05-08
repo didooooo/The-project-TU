@@ -25,7 +25,7 @@ namespace The_project
             // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
         }
 
-        
+
 
         Button showLess = new Button();
 
@@ -44,7 +44,6 @@ namespace The_project
             iconProfile.Location = new Point(62, 12);
             sidePanel.Controls.Add(showLess);
             btnDashboard.Text = "Dashboard";
-            btnFavourite.Text = "Favourites";
             btnContactUs.Text = "Contact Us";
             btnReviews.Text = "Reviews";
             btnExit.Text = "Exit";
@@ -52,7 +51,6 @@ namespace The_project
             btnContactUs.Size = new Size(190, 40);
             btnReviews.Size = new Size(190, 40);
             btnExit.Size = new Size(190, 40);
-            btnFavourite.Size = new Size(190, 40);
         }
         private void showLess_Click(object sender, EventArgs e)
         {
@@ -61,11 +59,9 @@ namespace The_project
             labelName.Location = new Point(42, 102);
             btnDashboard.Text = "";
             btnContactUs.Text = "";
-            btnFavourite.Text = "";
             btnReviews.Text = "";
             btnExit.Text = "";
             btnDashboard.Size = new Size(51, 55);
-            btnFavourite.Size = new Size(51, 55);
             btnReviews.Size = new Size(51, 55);
             btnContactUs.Size = new Size(51, 55);
             btnExit.Size = new Size(51, 55);
@@ -221,7 +217,7 @@ namespace The_project
             imgList.ImageSize = new Size(380, 380);
             pictureBoxSearch.Image = imgList.Images[0];
             pictureBoxSearchSecondImage.Image = imgList.Images[1];
-            pictureBoxSearchThirdImage.Image= imgList.Images[2];
+            pictureBoxSearchThirdImage.Image = imgList.Images[2];
         }
 
         private void btnSearchinSearch_Click(object sender, EventArgs e)
