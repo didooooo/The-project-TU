@@ -21,6 +21,7 @@ namespace The_project
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
             // this.Cursor += new EventHandler(this.cursorChange_Mouse);
             // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
+            
         }
 
 
@@ -65,6 +66,7 @@ namespace The_project
         private void btnSearch_Click(object sender, EventArgs e)
         {
             pnlMenu.Visible = false;
+            lblSearch.Visible = true;
             pnlSearch.Visible = true;
             pictureBoxSearch.Visible = true;
             pictureBoxSearchSecondImage.Visible = true;
@@ -84,6 +86,7 @@ namespace The_project
             pictureBoxSearch.Visible = false;
             pictureBoxSearchSecondImage.Visible = false;
             pictureBoxSearchThirdImage.Visible = false;
+            lblSearch.Visible = false;
         }
 
         private void btnContactUs_Click(object sender, EventArgs e)
@@ -111,6 +114,7 @@ namespace The_project
         {
             pnlRandom.Show();
             pnlMenu.Hide();
+            btnAccept.Visible = false;
         }
 
         private void btnCompare_Click(object sender, EventArgs e)
@@ -123,6 +127,7 @@ namespace The_project
         {
             pnlMenu.Show();
             pnlRandom.Hide();
+            btnAccept.Visible = true;
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
@@ -187,17 +192,17 @@ namespace The_project
                 checkBoxSports.Text = "Skiing/Snowboarding";
             }
         }
-
+        int savedIndex = 0;
         private void textBoxBudget_TextChanged(object sender, EventArgs e)
         {
-           
-                String temp = "";
+            String temp = "";
             for (int i = 0; i < textBoxBudget.Text.Length; i++)
             {
                 if (textBoxBudget.Text[i] == 'l')
                     break;
                 else
                 {
+                    
                     temp += textBoxBudget.Text[i];
                 }
             }
@@ -214,17 +219,17 @@ namespace The_project
                 {
 
                 }
-
         }
-
+       
         private void textBoxDays_TextChanged(object sender, EventArgs e)
         {
-
             String temp = "";
             for (int i = 0; i < textBoxDays.Text.Length; i++)
             {
                 if (textBoxDays.Text[i] == 'd')
+                {
                     break;
+                }
                 else temp += textBoxDays.Text[i];
             }
             try
@@ -252,6 +257,11 @@ namespace The_project
             pnlRandom.Hide();
             pnlSearch.Hide();
             pnlMenu.Visible = true; ;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

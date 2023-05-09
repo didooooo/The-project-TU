@@ -134,6 +134,8 @@
             // button1
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
             this.button1.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(54, 38);
@@ -154,6 +156,8 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.Location = new System.Drawing.Point(77, 38);
@@ -174,13 +178,15 @@
             // 
             // btnRandom
             // 
+            this.btnRandom.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRandom.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnRandom.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnRandom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRandom.Location = new System.Drawing.Point(54, 50);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(176, 73);
             this.btnRandom.TabIndex = 9;
-            this.btnRandom.Text = "Generate random \r\ncountry\r\n";
+            this.btnRandom.Text = "Generate random \r\ncountry";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
@@ -194,6 +200,8 @@
             // 
             // btnCompare
             // 
+            this.btnCompare.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCompare.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnCompare.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnCompare.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCompare.Location = new System.Drawing.Point(67, 50);
@@ -207,9 +215,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 48);
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(194, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 25);
+            this.label1.Size = new System.Drawing.Size(252, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose your destination";
             // 
@@ -220,9 +230,10 @@
             this.pnlMenu.Controls.Add(this.panel3);
             this.pnlMenu.Controls.Add(this.panel2);
             this.pnlMenu.Controls.Add(this.panel1);
-            this.pnlMenu.Location = new System.Drawing.Point(269, 120);
+            this.pnlMenu.Controls.Add(this.label1);
+            this.pnlMenu.Location = new System.Drawing.Point(269, 50);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(706, 457);
+            this.pnlMenu.Size = new System.Drawing.Size(706, 527);
             this.pnlMenu.TabIndex = 6;
             // 
             // iconProfile
@@ -307,6 +318,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // labelName
             // 
@@ -345,6 +357,8 @@
             // 
             // btnBackG
             // 
+            this.btnBackG.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBackG.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnBackG.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnBackG.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackG.Location = new System.Drawing.Point(37, 13);
@@ -357,6 +371,8 @@
             // 
             // btnAccept
             // 
+            this.btnAccept.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAccept.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnAccept.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnAccept.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccept.Location = new System.Drawing.Point(439, 303);
@@ -370,6 +386,8 @@
             // 
             // btnGenerate
             // 
+            this.btnGenerate.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGenerate.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnGenerate.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGenerate.Location = new System.Drawing.Point(436, 205);
@@ -444,6 +462,8 @@
             // 
             // btnComparee
             // 
+            this.btnComparee.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnComparee.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnComparee.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnComparee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnComparee.Location = new System.Drawing.Point(284, 318);
@@ -456,6 +476,8 @@
             // 
             // btnBackC
             // 
+            this.btnBackC.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBackC.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnBackC.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnBackC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackC.Location = new System.Drawing.Point(3, 2);
@@ -484,18 +506,22 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMenu.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnMenu.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMenu.Location = new System.Drawing.Point(19, 22);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(127, 58);
             this.btnMenu.TabIndex = 7;
-            this.btnMenu.Text = "Back to Menu";
+            this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnNext
             // 
+            this.btnNext.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNext.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnNext.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNext.Location = new System.Drawing.Point(553, 492);
@@ -721,6 +747,8 @@
             // 
             // btnSendEmail
             // 
+            this.btnSendEmail.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSendEmail.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnSendEmail.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnSendEmail.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSendEmail.Location = new System.Drawing.Point(586, 443);
@@ -745,10 +773,12 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(486, 500);
+            this.label12.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.SystemColors.Control;
+            this.label12.Location = new System.Drawing.Point(413, 493);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(236, 100);
+            this.label12.Size = new System.Drawing.Size(302, 92);
             this.label12.TabIndex = 7;
             this.label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiyan Dimitrov first year\r" +
     "\nVanessa Lombardo first year\r\n";
@@ -756,66 +786,80 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
             this.label11.Location = new System.Drawing.Point(26, 412);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(233, 25);
+            this.label11.Size = new System.Drawing.Size(269, 23);
             this.label11.TabIndex = 6;
             this.label11.Text = "vanessalombrd@gmail.com";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.SystemColors.Control;
             this.label10.Location = new System.Drawing.Point(26, 345);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(252, 25);
+            this.label10.Size = new System.Drawing.Size(292, 23);
             this.label10.TabIndex = 5;
             this.label10.Text = "dimitrovdiyan987@gmail.com";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.Control;
             this.label9.Location = new System.Drawing.Point(26, 270);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(247, 25);
+            this.label9.Size = new System.Drawing.Size(304, 23);
             this.label9.TabIndex = 4;
             this.label9.Text = "lachezarradushev@gmail.com";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(21, 212);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 25);
+            this.label8.Size = new System.Drawing.Size(126, 23);
             this.label8.TabIndex = 3;
             this.label8.Text = "Contact Us :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(16, 73);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(673, 125);
+            this.label7.Size = new System.Drawing.Size(633, 138);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Welcome to Our App! We would like to help you find a suitable destination for you" +
-    ".\r\nWe hope that the selected destination fits yours standarts!\r\n\r\n\r\n\r\n";
+            this.label7.Text = "Welcome to Our App! We would like to help you find a suitable \r\ndestination for y" +
+    "ou.\r\nWe hope that the selected destination fits yours standarts!\r\n\r\n\r\n\r\n";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(16, 35);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 25);
+            this.label6.Size = new System.Drawing.Size(125, 23);
             this.label6.TabIndex = 1;
             this.label6.Text = "Description";
             // 
             // btnBackToMenuContactUs
             // 
+            this.btnBackToMenuContactUs.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBackToMenuContactUs.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnBackToMenuContactUs.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnBackToMenuContactUs.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackToMenuContactUs.Location = new System.Drawing.Point(16, 498);
@@ -823,7 +867,7 @@
             this.btnBackToMenuContactUs.Name = "btnBackToMenuContactUs";
             this.btnBackToMenuContactUs.Size = new System.Drawing.Size(151, 68);
             this.btnBackToMenuContactUs.TabIndex = 0;
-            this.btnBackToMenuContactUs.Text = "Back To Menu";
+            this.btnBackToMenuContactUs.Text = "Menu";
             this.btnBackToMenuContactUs.UseVisualStyleBackColor = true;
             this.btnBackToMenuContactUs.Click += new System.EventHandler(this.btnBackToMenuContactUs_Click);
             // 
@@ -873,6 +917,8 @@
             // 
             // btnBackToMenuSearch
             // 
+            this.btnBackToMenuSearch.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBackToMenuSearch.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnBackToMenuSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnBackToMenuSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackToMenuSearch.Location = new System.Drawing.Point(11, 7);
@@ -894,6 +940,8 @@
             // 
             // btnSearchinSearch
             // 
+            this.btnSearchinSearch.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearchinSearch.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnSearchinSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnSearchinSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearchinSearch.Location = new System.Drawing.Point(567, 58);
@@ -924,14 +972,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1001, 663);
-            this.Controls.Add(this.pnlSearch);
-            this.Controls.Add(this.pnlByCh);
-            this.Controls.Add(this.pnlRandom);
+            this.ControlBox = false;
+            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlContactUs);
             this.Controls.Add(this.pnlCompare);
+            this.Controls.Add(this.pnlRandom);
+            this.Controls.Add(this.pnlByCh);
+            this.Controls.Add(this.pnlSearch);
             this.Controls.Add(this.pnlByChoice2);
-            this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.sidePanel);
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -941,6 +989,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).EndInit();
             this.sidePanel.ResumeLayout(false);
             this.sidePanel.PerformLayout();
