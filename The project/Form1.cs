@@ -190,34 +190,68 @@ namespace The_project
 
         private void textBoxBudget_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxBudget.Text[0] != '\0' || textBoxBudget.Text[0] != 'l')
-            {
+           
                 String temp = "";
-                for (int i = 0; i < textBoxBudget.Text.Length; i++)
+            for (int i = 0; i < textBoxBudget.Text.Length; i++)
+            {
+                if (textBoxBudget.Text[i] == 'l')
+                    break;
+                else
                 {
-                    if (textBoxBudget.Text[i] == 'l')
-                        break;
-                    else
-                        temp += textBoxBudget.Text[i];
+                    temp += textBoxBudget.Text[i];
                 }
-                trackBarBudget.Value = int.Parse(temp);
-
             }
+                try
+                {
+                if (int.Parse(temp) > 2000)
+                {
+                    MessageBox.Show("The max is 2000 lv!");
+                    trackBarBudget.Value = 2000;
+                }
+                    trackBarBudget.Value = int.Parse(temp);
+                }
+                catch (Exception)
+                {
+
+                }
+
         }
 
         private void textBoxDays_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxDays.Text[0] != '\0' || textBoxDays.Text[0] != 'd') 
+
+            String temp = "";
+            for (int i = 0; i < textBoxDays.Text.Length; i++)
             {
-                String temp = "";
-                for (int i = 0;i < textBoxDays.Text.Length;i++)
-                {
-                    if (textBoxDays.Text[i] == 'd')
-                        break;
-                    else temp += textBoxDays.Text[i];
-                }
-                    trackBarDays.Value = int.Parse(temp);
+                if (textBoxDays.Text[i] == 'd')
+                    break;
+                else temp += textBoxDays.Text[i];
             }
+            try
+            {
+                if (int.Parse(temp) > 30)
+                {
+                    MessageBox.Show("The max is 30 days!");
+                    trackBarDays.Value = 30;
+                }
+                trackBarDays.Value = int.Parse(temp);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        { 
+            pnlByCh.Hide();
+            pnlByChoice2.Hide();
+            pnlCompare.Hide();
+            pnlContactUs.Hide();
+            pnlMenu.Hide();
+            pnlRandom.Hide();
+            pnlSearch.Hide();
+            pnlMenu.Visible = true; ;
         }
     }
 }
