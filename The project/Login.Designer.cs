@@ -33,24 +33,16 @@
             this.btnGuest = new System.Windows.Forms.Button();
             this.loginPanel = new System.Windows.Forms.Panel();
             this.btnlog = new System.Windows.Forms.Button();
-            this.passwordLTextBox = new System.Windows.Forms.TextBox();
-            this.emailLTextBox = new System.Windows.Forms.TextBox();
-            this.passwordL = new System.Windows.Forms.Label();
-            this.emailL = new System.Windows.Forms.Label();
+            this.textBoxpasswordL = new System.Windows.Forms.TextBox();
+            this.textBoxemailL = new System.Windows.Forms.TextBox();
             this.signUpLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.signUpPanel = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.passwordSTextBox = new System.Windows.Forms.TextBox();
-            this.emailSTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxSName = new System.Windows.Forms.TextBox();
+            this.textBoxConfirmPass = new System.Windows.Forms.TextBox();
+            this.btnSignUpinSignUp = new System.Windows.Forms.Button();
+            this.textBoxpasswordS = new System.Windows.Forms.TextBox();
+            this.textBoxemailS = new System.Windows.Forms.TextBox();
             this.ssignUpLabel = new System.Windows.Forms.Label();
             this.lloginLabel = new System.Windows.Forms.Label();
             this.pnlChoose.SuspendLayout();
@@ -71,7 +63,10 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogin.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnLogin.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogin.Location = new System.Drawing.Point(415, 190);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(285, 115);
@@ -83,7 +78,10 @@
             // btnGuest
             // 
             this.btnGuest.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuest.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGuest.ForeColor = System.Drawing.Color.White;
+            this.btnGuest.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnGuest.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuest.Location = new System.Drawing.Point(124, 190);
             this.btnGuest.Name = "btnGuest";
             this.btnGuest.Size = new System.Drawing.Size(285, 115);
@@ -96,10 +94,8 @@
             // 
             this.loginPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.loginPanel.Controls.Add(this.btnlog);
-            this.loginPanel.Controls.Add(this.passwordLTextBox);
-            this.loginPanel.Controls.Add(this.emailLTextBox);
-            this.loginPanel.Controls.Add(this.passwordL);
-            this.loginPanel.Controls.Add(this.emailL);
+            this.loginPanel.Controls.Add(this.textBoxpasswordL);
+            this.loginPanel.Controls.Add(this.textBoxemailL);
             this.loginPanel.Controls.Add(this.signUpLabel);
             this.loginPanel.Controls.Add(this.loginLabel);
             this.loginPanel.Location = new System.Drawing.Point(79, 56);
@@ -109,45 +105,34 @@
             // 
             // btnlog
             // 
-            this.btnlog.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnlog.BackColor = System.Drawing.SystemColors.Control;
+            this.btnlog.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnlog.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnlog.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlog.Location = new System.Drawing.Point(298, 345);
             this.btnlog.Name = "btnlog";
             this.btnlog.Size = new System.Drawing.Size(244, 49);
             this.btnlog.TabIndex = 6;
             this.btnlog.Text = "Log in";
             this.btnlog.UseVisualStyleBackColor = false;
+            this.btnlog.Click += new System.EventHandler(this.btnlog_Click);
             // 
-            // passwordLTextBox
+            // textBoxpasswordL
             // 
-            this.passwordLTextBox.Location = new System.Drawing.Point(316, 261);
-            this.passwordLTextBox.Name = "passwordLTextBox";
-            this.passwordLTextBox.Size = new System.Drawing.Size(271, 31);
-            this.passwordLTextBox.TabIndex = 5;
+            this.textBoxpasswordL.Location = new System.Drawing.Point(293, 261);
+            this.textBoxpasswordL.Name = "textBoxpasswordL";
+            this.textBoxpasswordL.PlaceholderText = "Password";
+            this.textBoxpasswordL.Size = new System.Drawing.Size(271, 31);
+            this.textBoxpasswordL.TabIndex = 5;
             // 
-            // emailLTextBox
+            // textBoxemailL
             // 
-            this.emailLTextBox.Location = new System.Drawing.Point(316, 217);
-            this.emailLTextBox.Name = "emailLTextBox";
-            this.emailLTextBox.Size = new System.Drawing.Size(271, 31);
-            this.emailLTextBox.TabIndex = 4;
-            // 
-            // passwordL
-            // 
-            this.passwordL.AutoSize = true;
-            this.passwordL.Location = new System.Drawing.Point(180, 261);
-            this.passwordL.Name = "passwordL";
-            this.passwordL.Size = new System.Drawing.Size(87, 25);
-            this.passwordL.TabIndex = 3;
-            this.passwordL.Text = "Password";
-            // 
-            // emailL
-            // 
-            this.emailL.AutoSize = true;
-            this.emailL.Location = new System.Drawing.Point(180, 220);
-            this.emailL.Name = "emailL";
-            this.emailL.Size = new System.Drawing.Size(91, 25);
-            this.emailL.TabIndex = 2;
-            this.emailL.Text = "Username";
+            this.textBoxemailL.Location = new System.Drawing.Point(293, 217);
+            this.textBoxemailL.Name = "textBoxemailL";
+            this.textBoxemailL.PlaceholderText = "Username";
+            this.textBoxemailL.Size = new System.Drawing.Size(271, 31);
+            this.textBoxemailL.TabIndex = 4;
             // 
             // signUpLabel
             // 
@@ -174,17 +159,11 @@
             // signUpPanel
             // 
             this.signUpPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.signUpPanel.Controls.Add(this.dateTimePicker1);
-            this.signUpPanel.Controls.Add(this.textBox3);
-            this.signUpPanel.Controls.Add(this.label8);
-            this.signUpPanel.Controls.Add(this.label7);
-            this.signUpPanel.Controls.Add(this.textBox1);
-            this.signUpPanel.Controls.Add(this.label6);
-            this.signUpPanel.Controls.Add(this.button1);
-            this.signUpPanel.Controls.Add(this.passwordSTextBox);
-            this.signUpPanel.Controls.Add(this.emailSTextBox);
-            this.signUpPanel.Controls.Add(this.label2);
-            this.signUpPanel.Controls.Add(this.label3);
+            this.signUpPanel.Controls.Add(this.textBoxSName);
+            this.signUpPanel.Controls.Add(this.textBoxConfirmPass);
+            this.signUpPanel.Controls.Add(this.btnSignUpinSignUp);
+            this.signUpPanel.Controls.Add(this.textBoxpasswordS);
+            this.signUpPanel.Controls.Add(this.textBoxemailS);
             this.signUpPanel.Controls.Add(this.ssignUpLabel);
             this.signUpPanel.Controls.Add(this.lloginLabel);
             this.signUpPanel.Location = new System.Drawing.Point(81, 51);
@@ -192,95 +171,53 @@
             this.signUpPanel.Size = new System.Drawing.Size(830, 553);
             this.signUpPanel.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // textBoxSName
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(316, 227);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(275, 31);
-            this.dateTimePicker1.TabIndex = 13;
+            this.textBoxSName.Location = new System.Drawing.Point(280, 185);
+            this.textBoxSName.Name = "textBoxSName";
+            this.textBoxSName.PlaceholderText = "Name";
+            this.textBoxSName.Size = new System.Drawing.Size(271, 31);
+            this.textBoxSName.TabIndex = 12;
             // 
-            // textBox3
+            // textBoxConfirmPass
             // 
-            this.textBox3.Location = new System.Drawing.Point(316, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 31);
-            this.textBox3.TabIndex = 12;
+            this.textBoxConfirmPass.Location = new System.Drawing.Point(280, 368);
+            this.textBoxConfirmPass.Name = "textBoxConfirmPass";
+            this.textBoxConfirmPass.PlaceholderText = "Confirm password";
+            this.textBoxConfirmPass.Size = new System.Drawing.Size(271, 31);
+            this.textBoxConfirmPass.TabIndex = 8;
             // 
-            // label8
+            // btnSignUpinSignUp
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(144, 185);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 25);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Name";
+            this.btnSignUpinSignUp.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSignUpinSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSignUpinSignUp.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSignUpinSignUp.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSignUpinSignUp.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnSignUpinSignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSignUpinSignUp.Location = new System.Drawing.Point(290, 467);
+            this.btnSignUpinSignUp.Name = "btnSignUpinSignUp";
+            this.btnSignUpinSignUp.Size = new System.Drawing.Size(244, 49);
+            this.btnSignUpinSignUp.TabIndex = 6;
+            this.btnSignUpinSignUp.Text = "Sign up";
+            this.btnSignUpinSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUpinSignUp.Click += new System.EventHandler(this.btnSignUpinSignUp_Click);
             // 
-            // label7
+            // textBoxpasswordS
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(144, 227);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 25);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Date of birth";
+            this.textBoxpasswordS.Location = new System.Drawing.Point(280, 313);
+            this.textBoxpasswordS.Name = "textBoxpasswordS";
+            this.textBoxpasswordS.PlaceholderText = "Password";
+            this.textBoxpasswordS.Size = new System.Drawing.Size(271, 31);
+            this.textBoxpasswordS.TabIndex = 5;
             // 
-            // textBox1
+            // textBoxemailS
             // 
-            this.textBox1.Location = new System.Drawing.Point(316, 368);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 31);
-            this.textBox1.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(142, 374);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Confirm password";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(290, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sign up";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // passwordSTextBox
-            // 
-            this.passwordSTextBox.Location = new System.Drawing.Point(316, 320);
-            this.passwordSTextBox.Name = "passwordSTextBox";
-            this.passwordSTextBox.Size = new System.Drawing.Size(271, 31);
-            this.passwordSTextBox.TabIndex = 5;
-            // 
-            // emailSTextBox
-            // 
-            this.emailSTextBox.Location = new System.Drawing.Point(316, 274);
-            this.emailSTextBox.Name = "emailSTextBox";
-            this.emailSTextBox.Size = new System.Drawing.Size(271, 31);
-            this.emailSTextBox.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(142, 320);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(142, 274);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
+            this.textBoxemailS.Location = new System.Drawing.Point(280, 249);
+            this.textBoxemailS.Name = "textBoxemailS";
+            this.textBoxemailS.PlaceholderText = "Email";
+            this.textBoxemailS.Size = new System.Drawing.Size(271, 31);
+            this.textBoxemailS.TabIndex = 4;
             // 
             // ssignUpLabel
             // 
@@ -309,9 +246,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 664);
+            this.Controls.Add(this.pnlChoose);
             this.Controls.Add(this.signUpPanel);
             this.Controls.Add(this.loginPanel);
-            this.Controls.Add(this.pnlChoose);
             this.Name = "Login";
             this.Text = "Login";
             this.pnlChoose.ResumeLayout(false);
@@ -330,25 +267,17 @@
         private Button btnGuest;
         private Panel loginPanel;
         private Panel signUpPanel;
-        private Button button1;
-        private TextBox passwordSTextBox;
-        private TextBox emailSTextBox;
-        private Label label2;
-        private Label label3;
+        private Button btnSignUpinSignUp;
+        private TextBox textBoxpasswordS;
+        private TextBox textBoxemailS;
         private Label ssignUpLabel;
         private Label lloginLabel;
         private Button btnlog;
-        private TextBox passwordLTextBox;
-        private TextBox emailLTextBox;
-        private Label passwordL;
-        private Label emailL;
+        private TextBox textBoxpasswordL;
+        private TextBox textBoxemailL;
         private Label signUpLabel;
         private Label loginLabel;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox3;
-        private Label label8;
-        private Label label7;
-        private TextBox textBox1;
-        private Label label6;
+        private TextBox textBoxSName;
+        private TextBox textBoxConfirmPass;
     }
 }
