@@ -47,13 +47,17 @@
             this.labelName = new System.Windows.Forms.Label();
             this.sidePanel = new System.Windows.Forms.Panel();
             this.pnlRandom = new System.Windows.Forms.Panel();
+            this.pictureBoxArrow = new System.Windows.Forms.PictureBox();
+            this.lblClickToGenerate = new System.Windows.Forms.Label();
+            this.pictureBoxImageRandom = new System.Windows.Forms.PictureBox();
+            this.lblRandom = new System.Windows.Forms.Label();
             this.btnBackG = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
             this.btnGenerate = new System.Windows.Forms.Button();
-            this.dataRandom = new System.Windows.Forms.DataGridView();
             this.pnlCompare = new System.Windows.Forms.Panel();
-            this.dataSecondC = new System.Windows.Forms.DataGridView();
-            this.dataOneC = new System.Windows.Forms.DataGridView();
+            this.lblIfEquals = new System.Windows.Forms.Label();
+            this.lblSecondC = new System.Windows.Forms.Label();
+            this.lblOneC = new System.Windows.Forms.Label();
             this.combSecondC = new System.Windows.Forms.ComboBox();
             this.combOneC = new System.Windows.Forms.ComboBox();
             this.btnComparee = new System.Windows.Forms.Button();
@@ -92,6 +96,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnBackToMenuContactUs = new System.Windows.Forms.Button();
             this.pnlSearch = new System.Windows.Forms.Panel();
+            this.lblSearchedCountry = new System.Windows.Forms.Label();
+            this.pictureBoxForSeacrhedCountry = new System.Windows.Forms.PictureBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.pictureBoxSearchThirdImage = new System.Windows.Forms.PictureBox();
             this.pictureBoxSearchSecondImage = new System.Windows.Forms.PictureBox();
@@ -100,6 +106,7 @@
             this.btnSearchinSearch = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
+            this.imageListRandom = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -108,16 +115,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).BeginInit();
             this.sidePanel.SuspendLayout();
             this.pnlRandom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataRandom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageRandom)).BeginInit();
             this.pnlCompare.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).BeginInit();
             this.pnlByCh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBudget)).BeginInit();
             this.pnlByChoice2.SuspendLayout();
             this.pnlContactUs.SuspendLayout();
             this.pnlSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForSeacrhedCountry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
@@ -142,7 +149,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 73);
             this.button1.TabIndex = 7;
-            this.button1.Text = "By your choice";
+            this.button1.Text = "By criterias";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -164,7 +171,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(186, 73);
             this.btnSearch.TabIndex = 8;
-            this.btnSearch.Text = "Search by data \r\nfor country\r\n";
+            this.btnSearch.Text = "By name";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -186,7 +193,7 @@
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(176, 73);
             this.btnRandom.TabIndex = 9;
-            this.btnRandom.Text = "Generate random \r\ncountry";
+            this.btnRandom.Text = "by random";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
@@ -208,7 +215,7 @@
             this.btnCompare.Name = "btnCompare";
             this.btnCompare.Size = new System.Drawing.Size(186, 73);
             this.btnCompare.TabIndex = 10;
-            this.btnCompare.Text = "Compare countries\r\n";
+            this.btnCompare.Text = "by Comparison";
             this.btnCompare.UseVisualStyleBackColor = true;
             this.btnCompare.Click += new System.EventHandler(this.btnCompare_Click);
             // 
@@ -345,15 +352,59 @@
             // 
             // pnlRandom
             // 
+            this.pnlRandom.Controls.Add(this.pictureBoxArrow);
+            this.pnlRandom.Controls.Add(this.lblClickToGenerate);
+            this.pnlRandom.Controls.Add(this.pictureBoxImageRandom);
+            this.pnlRandom.Controls.Add(this.lblRandom);
             this.pnlRandom.Controls.Add(this.btnBackG);
             this.pnlRandom.Controls.Add(this.btnAccept);
             this.pnlRandom.Controls.Add(this.btnGenerate);
-            this.pnlRandom.Controls.Add(this.dataRandom);
             this.pnlRandom.Location = new System.Drawing.Point(243, 37);
             this.pnlRandom.Name = "pnlRandom";
             this.pnlRandom.Size = new System.Drawing.Size(730, 567);
             this.pnlRandom.TabIndex = 7;
             this.pnlRandom.Visible = false;
+            // 
+            // pictureBoxArrow
+            // 
+            this.pictureBoxArrow.Image = global::The_project.Properties.Resources.curve_arrow1;
+            this.pictureBoxArrow.Location = new System.Drawing.Point(376, 175);
+            this.pictureBoxArrow.Name = "pictureBoxArrow";
+            this.pictureBoxArrow.Size = new System.Drawing.Size(155, 183);
+            this.pictureBoxArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxArrow.TabIndex = 8;
+            this.pictureBoxArrow.TabStop = false;
+            // 
+            // lblClickToGenerate
+            // 
+            this.lblClickToGenerate.AutoSize = true;
+            this.lblClickToGenerate.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClickToGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblClickToGenerate.Location = new System.Drawing.Point(32, 138);
+            this.lblClickToGenerate.Name = "lblClickToGenerate";
+            this.lblClickToGenerate.Size = new System.Drawing.Size(358, 44);
+            this.lblClickToGenerate.TabIndex = 7;
+            this.lblClickToGenerate.Text = "Click to generate";
+            // 
+            // pictureBoxImageRandom
+            // 
+            this.pictureBoxImageRandom.Location = new System.Drawing.Point(396, 10);
+            this.pictureBoxImageRandom.Name = "pictureBoxImageRandom";
+            this.pictureBoxImageRandom.Size = new System.Drawing.Size(327, 317);
+            this.pictureBoxImageRandom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxImageRandom.TabIndex = 6;
+            this.pictureBoxImageRandom.TabStop = false;
+            // 
+            // lblRandom
+            // 
+            this.lblRandom.Font = new System.Drawing.Font("Showcard Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRandom.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRandom.Location = new System.Drawing.Point(8, 203);
+            this.lblRandom.Name = "lblRandom";
+            this.lblRandom.Size = new System.Drawing.Size(382, 239);
+            this.lblRandom.TabIndex = 5;
+            this.lblRandom.Text = "label13";
+            this.lblRandom.Visible = false;
             // 
             // btnBackG
             // 
@@ -363,7 +414,7 @@
             this.btnBackG.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackG.Location = new System.Drawing.Point(37, 13);
             this.btnBackG.Name = "btnBackG";
-            this.btnBackG.Size = new System.Drawing.Size(93, 32);
+            this.btnBackG.Size = new System.Drawing.Size(121, 55);
             this.btnBackG.TabIndex = 4;
             this.btnBackG.Text = "Menu";
             this.btnBackG.UseVisualStyleBackColor = true;
@@ -375,7 +426,7 @@
             this.btnAccept.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnAccept.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnAccept.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAccept.Location = new System.Drawing.Point(439, 303);
+            this.btnAccept.Location = new System.Drawing.Point(462, 462);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(220, 63);
             this.btnAccept.TabIndex = 3;
@@ -390,7 +441,7 @@
             this.btnGenerate.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnGenerate.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerate.Location = new System.Drawing.Point(436, 205);
+            this.btnGenerate.Location = new System.Drawing.Point(459, 364);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(221, 68);
             this.btnGenerate.TabIndex = 1;
@@ -398,20 +449,11 @@
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
-            // dataRandom
-            // 
-            this.dataRandom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataRandom.Location = new System.Drawing.Point(19, 57);
-            this.dataRandom.Name = "dataRandom";
-            this.dataRandom.RowHeadersWidth = 62;
-            this.dataRandom.RowTemplate.Height = 33;
-            this.dataRandom.Size = new System.Drawing.Size(381, 458);
-            this.dataRandom.TabIndex = 0;
-            // 
             // pnlCompare
             // 
-            this.pnlCompare.Controls.Add(this.dataSecondC);
-            this.pnlCompare.Controls.Add(this.dataOneC);
+            this.pnlCompare.Controls.Add(this.lblIfEquals);
+            this.pnlCompare.Controls.Add(this.lblSecondC);
+            this.pnlCompare.Controls.Add(this.lblOneC);
             this.pnlCompare.Controls.Add(this.combSecondC);
             this.pnlCompare.Controls.Add(this.combOneC);
             this.pnlCompare.Controls.Add(this.btnComparee);
@@ -422,31 +464,63 @@
             this.pnlCompare.TabIndex = 8;
             this.pnlCompare.Visible = false;
             // 
-            // dataSecondC
+            // lblIfEquals
             // 
-            this.dataSecondC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataSecondC.Location = new System.Drawing.Point(407, 127);
-            this.dataSecondC.Name = "dataSecondC";
-            this.dataSecondC.RowHeadersWidth = 62;
-            this.dataSecondC.RowTemplate.Height = 33;
-            this.dataSecondC.Size = new System.Drawing.Size(274, 342);
-            this.dataSecondC.TabIndex = 5;
-            this.dataSecondC.Visible = false;
+            this.lblIfEquals.Font = new System.Drawing.Font("Showcard Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIfEquals.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblIfEquals.Location = new System.Drawing.Point(191, 88);
+            this.lblIfEquals.Name = "lblIfEquals";
+            this.lblIfEquals.Size = new System.Drawing.Size(308, 322);
+            this.lblIfEquals.TabIndex = 6;
+            this.lblIfEquals.Text = "label13";
+            this.lblIfEquals.Visible = false;
             // 
-            // dataOneC
+            // lblSecondC
             // 
-            this.dataOneC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOneC.Location = new System.Drawing.Point(60, 127);
-            this.dataOneC.Name = "dataOneC";
-            this.dataOneC.RowHeadersWidth = 62;
-            this.dataOneC.RowTemplate.Height = 33;
-            this.dataOneC.Size = new System.Drawing.Size(274, 342);
-            this.dataOneC.TabIndex = 4;
-            this.dataOneC.Visible = false;
+            this.lblSecondC.Font = new System.Drawing.Font("Showcard Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSecondC.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblSecondC.Location = new System.Drawing.Point(375, 99);
+            this.lblSecondC.Name = "lblSecondC";
+            this.lblSecondC.Size = new System.Drawing.Size(324, 292);
+            this.lblSecondC.TabIndex = 5;
+            this.lblSecondC.Text = "label13";
+            this.lblSecondC.Visible = false;
+            // 
+            // lblOneC
+            // 
+            this.lblOneC.Font = new System.Drawing.Font("Showcard Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOneC.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblOneC.Location = new System.Drawing.Point(37, 88);
+            this.lblOneC.Name = "lblOneC";
+            this.lblOneC.Size = new System.Drawing.Size(337, 303);
+            this.lblOneC.TabIndex = 4;
+            this.lblOneC.Text = "label13";
+            this.lblOneC.Visible = false;
             // 
             // combSecondC
             // 
             this.combSecondC.FormattingEnabled = true;
+            this.combSecondC.Items.AddRange(new object[] {
+            "Austria",
+            "Bulgaria",
+            "Czechia",
+            "England",
+            "Finland",
+            "France",
+            "Germany",
+            "Greece",
+            "Ireland",
+            "Italy",
+            "Macedonia",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Serbia",
+            "Slovakia",
+            "Spain",
+            "Switzerland",
+            "Turkey",
+            "Ukraine"});
             this.combSecondC.Location = new System.Drawing.Point(479, 207);
             this.combSecondC.Name = "combSecondC";
             this.combSecondC.Size = new System.Drawing.Size(155, 33);
@@ -455,6 +529,27 @@
             // combOneC
             // 
             this.combOneC.FormattingEnabled = true;
+            this.combOneC.Items.AddRange(new object[] {
+            "Austria",
+            "Bulgaria",
+            "Czechia",
+            "England",
+            "Finland",
+            "France",
+            "Germany",
+            "Greece",
+            "Ireland",
+            "Italy",
+            "Macedonia",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Serbia",
+            "Slovakia",
+            "Spain",
+            "Switzerland",
+            "Turkey",
+            "Ukraine"});
             this.combOneC.Location = new System.Drawing.Point(119, 207);
             this.combOneC.Name = "combOneC";
             this.combOneC.Size = new System.Drawing.Size(155, 33);
@@ -535,11 +630,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 287);
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(56, 287);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 25);
+            this.label2.Size = new System.Drawing.Size(362, 23);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Dni";
+            this.label2.Text = "How many days will you be staying?";
             // 
             // textBoxDays
             // 
@@ -563,11 +660,13 @@
             // Budget
             // 
             this.Budget.AutoSize = true;
-            this.Budget.Location = new System.Drawing.Point(89, 118);
+            this.Budget.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Budget.ForeColor = System.Drawing.SystemColors.Control;
+            this.Budget.Location = new System.Drawing.Point(56, 117);
             this.Budget.Name = "Budget";
-            this.Budget.Size = new System.Drawing.Size(69, 25);
+            this.Budget.Size = new System.Drawing.Size(222, 23);
             this.Budget.TabIndex = 2;
-            this.Budget.Text = "Budget";
+            this.Budget.Text = "What is your Budget?";
             // 
             // textBoxBudget
             // 
@@ -873,6 +972,8 @@
             // 
             // pnlSearch
             // 
+            this.pnlSearch.Controls.Add(this.lblSearchedCountry);
+            this.pnlSearch.Controls.Add(this.pictureBoxForSeacrhedCountry);
             this.pnlSearch.Controls.Add(this.lblSearch);
             this.pnlSearch.Controls.Add(this.pictureBoxSearchThirdImage);
             this.pnlSearch.Controls.Add(this.pictureBoxSearchSecondImage);
@@ -885,6 +986,27 @@
             this.pnlSearch.Size = new System.Drawing.Size(730, 585);
             this.pnlSearch.TabIndex = 12;
             this.pnlSearch.Visible = false;
+            // 
+            // lblSearchedCountry
+            // 
+            this.lblSearchedCountry.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSearchedCountry.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblSearchedCountry.Location = new System.Drawing.Point(15, 143);
+            this.lblSearchedCountry.Name = "lblSearchedCountry";
+            this.lblSearchedCountry.Size = new System.Drawing.Size(322, 342);
+            this.lblSearchedCountry.TabIndex = 10;
+            this.lblSearchedCountry.Text = "label13";
+            this.lblSearchedCountry.Visible = false;
+            // 
+            // pictureBoxForSeacrhedCountry
+            // 
+            this.pictureBoxForSeacrhedCountry.Location = new System.Drawing.Point(407, 143);
+            this.pictureBoxForSeacrhedCountry.Name = "pictureBoxForSeacrhedCountry";
+            this.pictureBoxForSeacrhedCountry.Size = new System.Drawing.Size(313, 378);
+            this.pictureBoxForSeacrhedCountry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxForSeacrhedCountry.TabIndex = 9;
+            this.pictureBoxForSeacrhedCountry.TabStop = false;
+            this.pictureBoxForSeacrhedCountry.Visible = false;
             // 
             // lblSearch
             // 
@@ -899,9 +1021,9 @@
             // 
             // pictureBoxSearchThirdImage
             // 
-            this.pictureBoxSearchThirdImage.Location = new System.Drawing.Point(474, 130);
+            this.pictureBoxSearchThirdImage.Location = new System.Drawing.Point(454, 118);
             this.pictureBoxSearchThirdImage.Name = "pictureBoxSearchThirdImage";
-            this.pictureBoxSearchThirdImage.Size = new System.Drawing.Size(269, 378);
+            this.pictureBoxSearchThirdImage.Size = new System.Drawing.Size(307, 413);
             this.pictureBoxSearchThirdImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSearchThirdImage.TabIndex = 7;
             this.pictureBoxSearchThirdImage.TabStop = false;
@@ -956,7 +1078,7 @@
             // 
             this.textBoxSearch.Location = new System.Drawing.Point(67, 62);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.PlaceholderText = " Search country";
+            this.textBoxSearch.PlaceholderText = " Search the name of the country";
             this.textBoxSearch.Size = new System.Drawing.Size(475, 31);
             this.textBoxSearch.TabIndex = 0;
             // 
@@ -966,6 +1088,12 @@
             this.imgList.ImageSize = new System.Drawing.Size(16, 16);
             this.imgList.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // imageListRandom
+            // 
+            this.imageListRandom.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageListRandom.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageListRandom.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -973,12 +1101,12 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1001, 663);
             this.ControlBox = false;
+            this.Controls.Add(this.pnlSearch);
+            this.Controls.Add(this.pnlByCh);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.pnlContactUs);
             this.Controls.Add(this.pnlCompare);
             this.Controls.Add(this.pnlRandom);
-            this.Controls.Add(this.pnlByCh);
-            this.Controls.Add(this.pnlSearch);
+            this.Controls.Add(this.pnlContactUs);
             this.Controls.Add(this.pnlByChoice2);
             this.Controls.Add(this.sidePanel);
             this.MaximizeBox = false;
@@ -994,10 +1122,10 @@
             this.sidePanel.ResumeLayout(false);
             this.sidePanel.PerformLayout();
             this.pnlRandom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataRandom)).EndInit();
+            this.pnlRandom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageRandom)).EndInit();
             this.pnlCompare.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSecondC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOneC)).EndInit();
             this.pnlByCh.ResumeLayout(false);
             this.pnlByCh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDays)).EndInit();
@@ -1008,6 +1136,7 @@
             this.pnlContactUs.PerformLayout();
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForSeacrhedCountry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
@@ -1037,15 +1166,12 @@
         private Panel pnlRandom;
         private Button btnAccept;
         private Button btnGenerate;
-        private DataGridView dataRandom;
         private Button btnBackG;
         private Panel pnlCompare;
         private ComboBox combSecondC;
         private ComboBox combOneC;
         private Button btnComparee;
         private Button btnBackC;
-        private DataGridView dataSecondC;
-        private DataGridView dataOneC;
         private Panel pnlByCh;
         private Label Budget;
         private TextBox textBoxBudget;
@@ -1088,5 +1214,15 @@
         private PictureBox pictureBoxSearchThirdImage;
         private PictureBox pictureBoxSearchSecondImage;
         private Label lblSearch;
+        private Label lblRandom;
+        private PictureBox pictureBoxImageRandom;
+        private ImageList imageListRandom;
+        private PictureBox pictureBoxArrow;
+        private Label lblClickToGenerate;
+        private Label lblSearchedCountry;
+        private PictureBox pictureBoxForSeacrhedCountry;
+        private Label lblIfEquals;
+        private Label lblSecondC;
+        private Label lblOneC;
     }
 }

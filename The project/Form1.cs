@@ -2,6 +2,11 @@
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Net;
+using System.Data;
+using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Runtime.Intrinsics.X86;
+using System.Numerics;
 
 namespace The_project
 {
@@ -17,37 +22,28 @@ namespace The_project
             btnExit.Location = new Point(62, Bottom);
             labelName.Text = userName;
             labelName.ForeColor = Color.White;
-            // topPanel.BackColor = Color.FromArgb(20, 69, 83);
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
-            // this.Cursor += new EventHandler(this.cursorChange_Mouse);
-            // this.Size = new Size(int.MaxValue-1000, int.MaxValue-1000);
-            
+            string path = @"C:\Users\dimit\OneDrive\Работен плот\The-project-TU\dataForCountry.txt";
+            string pathImage = @"C:\Users\dimit\OneDrive\Работен плот\The-project-TU\photoss.txt";
+            dataForCountry = File.ReadAllLines(path).ToArray();
+            //imageForCountry=File.ReadAllLines(pathImage).ToArray();
+            imageForCountry = Directory.GetFiles(@"C:\Users\dimit\OneDrive\Работен плот\Durjavi", "*.png");
         }
-
-
-
-        Button showLess = new Button();
-
-
-
+        String[] dataForCountry = new String[21];
+        String[] imageForCountry = new String[21];
+        String[] nameCountry = {"Austria","Bulgaria", "Czechia","England", "Finland","France" ,"Germany", "Greece","Ireland",
+                                "Italy","Macedonia",
+                                "Poland", "Portugal","Romania","Serbia", "Slovakia","Spain","Switzerland","Turkey","Ukraine" };
+        int[] prices = { 85,130,122,173,124,156,164,93,146,129,79,113,99,103,82,119,134,143,65,69};
         private void iconProfile_Click(object sender, EventArgs e)
         {
             iconProfile.BackColor = Color.Transparent;
         }
 
-
-
-
-
-
-
         private void pnlByCh_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -59,12 +55,15 @@ namespace The_project
         {
             pnlSearch.Visible = false;
             pnlMenu.Visible = true;
+            pictureBoxForSeacrhedCountry.Visible = false;
+            lblSearchedCountry.Visible = false;
         }
 
 
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+          
             pnlMenu.Visible = false;
             lblSearch.Visible = true;
             pnlSearch.Visible = true;
@@ -83,10 +82,32 @@ namespace The_project
 
         private void btnSearchinSearch_Click(object sender, EventArgs e)
         {
-            pictureBoxSearch.Visible = false;
-            pictureBoxSearchSecondImage.Visible = false;
-            pictureBoxSearchThirdImage.Visible = false;
-            lblSearch.Visible = false;
+           
+            String searchedCountry = textBoxSearch.Text.ToString();
+            int flag = 0;
+            for(int i = 0; i < nameCountry.Length; i++)
+            {
+                if(searchedCountry.ToLower() == nameCountry[i].ToLower())
+                {
+                    pictureBoxSearch.Visible = false;
+                    pictureBoxSearchSecondImage.Visible = false;
+                    pictureBoxSearchThirdImage.Visible = false;
+                    lblSearch.Visible = false;
+                    lblSearchedCountry.Visible = true;
+                    pictureBoxForSeacrhedCountry.Visible = true;
+                    lblSearchedCountry.Text = dataForCountry[i];
+                    Image img;
+                    img = Image.FromFile(imageForCountry[i]);
+                    pictureBoxForSeacrhedCountry.Image = img;
+                    flag = 1;
+                    textBoxSearch.Clear();
+                }
+            }
+            if(flag== 0)
+            {
+                MessageBox.Show("There is no such country in our database");
+                textBoxSearch.Clear();
+            }
         }
 
         private void btnContactUs_Click(object sender, EventArgs e)
@@ -129,16 +150,38 @@ namespace The_project
             pnlRandom.Hide();
             btnAccept.Visible = true;
         }
-
+        int randomAll = 0;
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             btnAccept.Visible = true;
+            Random random = new Random();
+            int number=random.Next(0,20);
+            randomAll = number;
+            lblRandom.Text = dataForCountry[number].ToString();
+            lblRandom.Visible = true;
+            lblClickToGenerate.Visible = false;
+            pictureBoxArrow.Visible = false;
+            pictureBoxImageRandom.Visible = true;
+            try
+            {
+                Image img;
+                img = Image.FromFile(imageForCountry[number]);
+                pictureBoxImageRandom.Image=img;
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Your destination is ");
+            MessageBox.Show("Your destination is " + nameCountry[randomAll] );
             pnlRandom.Hide();
+            lblRandom.Visible = false;
+            pictureBoxArrow.Visible=true;
+            lblClickToGenerate.Visible = true;
+            pictureBoxImageRandom.Visible = false;
             pnlMenu.Show();
         }
 
@@ -149,18 +192,41 @@ namespace The_project
             combOneC.Location = new Point(118, 207);
             combSecondC.Location = new Point(479, 207);
             btnComparee.Location = new Point(284, 318);
-            dataOneC.Visible = false;
-            dataSecondC.Visible = false;
+            lblOneC.Visible = false;
+            lblSecondC.Visible = false;
+            lblIfEquals.Visible = false;
+            
         }
 
         private void btnComparee_Click(object sender, EventArgs e)
         {
-            combOneC.Location = new Point(118, 43);
-            combSecondC.Location = new Point(479, 43);
-            btnComparee.Location = new Point(284, 482);
-            dataOneC.Visible = true;
-            dataSecondC.Visible = true;
+            if (combOneC.SelectedIndex >= 0 && combSecondC.SelectedIndex >= 0)
+            {
+                combOneC.Location = new Point(118, 43);
+                combSecondC.Location = new Point(479, 43);
+                btnComparee.Location = new Point(284, 482);
+                if (combOneC.SelectedIndex != combSecondC.SelectedIndex)
+                {
+                    lblOneC.Visible = true;
+                    lblSecondC.Visible = true;
+                    lblIfEquals.Visible = false;
+                    lblOneC.Text = dataForCountry[combOneC.SelectedIndex].ToString();
+                    lblSecondC.Text = dataForCountry[combSecondC.SelectedIndex].ToString();
+                }
+                else
+                {
+                    lblOneC.Visible = false;
+                    lblSecondC.Visible = false;
+                    lblIfEquals.Visible = true;
+                    lblIfEquals.Text = dataForCountry[combOneC.SelectedIndex].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Choose country!");
+            }
         }
+
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -256,7 +322,22 @@ namespace The_project
             pnlMenu.Hide();
             pnlRandom.Hide();
             pnlSearch.Hide();
-            pnlMenu.Visible = true; ;
+            pnlMenu.Visible = true;
+            lblClickToGenerate.Visible = true;
+            pictureBoxArrow.Visible = true;
+            pictureBoxImageRandom.Visible = false;
+            lblRandom.Visible = false;
+            btnAccept.Visible = false;
+            lblSearchedCountry.Visible = false;
+            pictureBoxForSeacrhedCountry.Visible = false;
+            pnlMenu.Visible = true;
+            pnlCompare.Visible = false;
+            combOneC.Location = new Point(118, 207);
+            combSecondC.Location = new Point(479, 207);
+            btnComparee.Location = new Point(284, 318);
+            lblOneC.Visible = false;
+            lblSecondC.Visible = false;
+            lblIfEquals.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

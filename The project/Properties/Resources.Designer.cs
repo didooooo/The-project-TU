@@ -93,6 +93,26 @@ namespace The_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap curve_arrow {
+            get {
+                object obj = ResourceManager.GetObject("curve-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap curve_arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("curve-arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap customer_feedback {
             get {
                 object obj = ResourceManager.GetObject("customer-feedback", resourceCulture);
