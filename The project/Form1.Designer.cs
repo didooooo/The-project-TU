@@ -29,13 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btnCompare = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
@@ -46,9 +42,9 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
             this.sidePanel = new System.Windows.Forms.Panel();
+            this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlRandom = new System.Windows.Forms.Panel();
             this.pictureBoxArrow = new System.Windows.Forms.PictureBox();
-            this.lblClickToGenerate = new System.Windows.Forms.Label();
             this.pictureBoxImageRandom = new System.Windows.Forms.PictureBox();
             this.lblRandom = new System.Windows.Forms.Label();
             this.btnBackG = new System.Windows.Forms.Button();
@@ -68,10 +64,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDays = new System.Windows.Forms.TextBox();
             this.trackBarDays = new System.Windows.Forms.TrackBar();
+            this.trackBarBudget = new System.Windows.Forms.TrackBar();
             this.Budget = new System.Windows.Forms.Label();
             this.textBoxBudget = new System.Windows.Forms.TextBox();
-            this.trackBarBudget = new System.Windows.Forms.TrackBar();
             this.pnlByChoice2 = new System.Windows.Forms.Panel();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.checkBoxOutdoor = new System.Windows.Forms.CheckBox();
             this.checkBoxSports = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -88,7 +85,6 @@
             this.btnSendEmail = new System.Windows.Forms.Button();
             this.txtboxEmail = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -107,10 +103,11 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.imageListRandom = new System.Windows.Forms.ImageList(this.components);
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlReviews = new System.Windows.Forms.Panel();
+            this.lblREview = new System.Windows.Forms.Label();
+            this.textBoxReview = new System.Windows.Forms.TextBox();
+            this.btnSendReview = new System.Windows.Forms.Button();
+            this.timerR = new System.Windows.Forms.Timer(this.components);
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).BeginInit();
             this.sidePanel.SuspendLayout();
@@ -128,15 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
+            this.pnlReviews.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(50, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(324, 193);
-            this.panel1.TabIndex = 4;
             // 
             // button1
             // 
@@ -145,21 +135,13 @@
             this.button1.ForeColor = System.Drawing.Color.SteelBlue;
             this.button1.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(54, 38);
+            this.button1.Location = new System.Drawing.Point(79, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 73);
+            this.button1.Size = new System.Drawing.Size(234, 89);
             this.button1.TabIndex = 7;
             this.button1.Text = "By criterias";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnSearch);
-            this.panel2.Location = new System.Drawing.Point(334, 42);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(324, 193);
-            this.panel2.TabIndex = 5;
             // 
             // btnSearch
             // 
@@ -167,21 +149,13 @@
             this.btnSearch.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnSearch.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.Location = new System.Drawing.Point(77, 38);
+            this.btnSearch.Location = new System.Drawing.Point(411, 105);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(186, 73);
+            this.btnSearch.Size = new System.Drawing.Size(231, 96);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "By name";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnRandom);
-            this.panel3.Location = new System.Drawing.Point(50, 217);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(324, 193);
-            this.panel3.TabIndex = 5;
             // 
             // btnRandom
             // 
@@ -189,21 +163,13 @@
             this.btnRandom.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnRandom.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnRandom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRandom.Location = new System.Drawing.Point(54, 50);
+            this.btnRandom.Location = new System.Drawing.Point(77, 313);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(176, 73);
+            this.btnRandom.Size = new System.Drawing.Size(234, 83);
             this.btnRandom.TabIndex = 9;
             this.btnRandom.Text = "by random";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnCompare);
-            this.panel4.Location = new System.Drawing.Point(334, 217);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(324, 193);
-            this.panel4.TabIndex = 5;
             // 
             // btnCompare
             // 
@@ -211,9 +177,9 @@
             this.btnCompare.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnCompare.Image = global::The_project.Properties.Resources.output_onlinegiftools;
             this.btnCompare.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCompare.Location = new System.Drawing.Point(67, 50);
+            this.btnCompare.Location = new System.Drawing.Point(408, 307);
             this.btnCompare.Name = "btnCompare";
-            this.btnCompare.Size = new System.Drawing.Size(186, 73);
+            this.btnCompare.Size = new System.Drawing.Size(240, 91);
             this.btnCompare.TabIndex = 10;
             this.btnCompare.Text = "by Comparison";
             this.btnCompare.UseVisualStyleBackColor = true;
@@ -222,23 +188,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(194, 0);
+            this.label1.Location = new System.Drawing.Point(206, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 23);
+            this.label1.Size = new System.Drawing.Size(334, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose your destination";
             // 
             // pnlMenu
             // 
             this.pnlMenu.AutoSize = true;
-            this.pnlMenu.Controls.Add(this.panel4);
-            this.pnlMenu.Controls.Add(this.panel3);
-            this.pnlMenu.Controls.Add(this.panel2);
-            this.pnlMenu.Controls.Add(this.panel1);
+            this.pnlMenu.Controls.Add(this.btnRandom);
+            this.pnlMenu.Controls.Add(this.btnCompare);
+            this.pnlMenu.Controls.Add(this.btnSearch);
+            this.pnlMenu.Controls.Add(this.button1);
             this.pnlMenu.Controls.Add(this.label1);
-            this.pnlMenu.Location = new System.Drawing.Point(269, 50);
+            this.pnlMenu.Location = new System.Drawing.Point(252, 50);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(706, 527);
             this.pnlMenu.TabIndex = 6;
@@ -249,7 +215,7 @@
             this.iconProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.iconProfile.ErrorImage = null;
             this.iconProfile.InitialImage = null;
-            this.iconProfile.Location = new System.Drawing.Point(41, 18);
+            this.iconProfile.Location = new System.Drawing.Point(41, 15);
             this.iconProfile.Name = "iconProfile";
             this.iconProfile.Size = new System.Drawing.Size(107, 87);
             this.iconProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -308,6 +274,7 @@
             this.btnReviews.TabIndex = 6;
             this.btnReviews.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // btnExit
             // 
@@ -338,6 +305,7 @@
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.Coral;
+            this.sidePanel.Controls.Add(this.lblCopyright);
             this.sidePanel.Controls.Add(this.labelName);
             this.sidePanel.Controls.Add(this.btnExit);
             this.sidePanel.Controls.Add(this.btnReviews);
@@ -350,10 +318,20 @@
             this.sidePanel.Size = new System.Drawing.Size(214, 663);
             this.sidePanel.TabIndex = 3;
             // 
+            // lblCopyright
+            // 
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCopyright.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblCopyright.Location = new System.Drawing.Point(12, 631);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(172, 23);
+            this.lblCopyright.TabIndex = 10;
+            this.lblCopyright.Text = "Copyright © 2023";
+            // 
             // pnlRandom
             // 
             this.pnlRandom.Controls.Add(this.pictureBoxArrow);
-            this.pnlRandom.Controls.Add(this.lblClickToGenerate);
             this.pnlRandom.Controls.Add(this.pictureBoxImageRandom);
             this.pnlRandom.Controls.Add(this.lblRandom);
             this.pnlRandom.Controls.Add(this.btnBackG);
@@ -367,24 +345,13 @@
             // 
             // pictureBoxArrow
             // 
-            this.pictureBoxArrow.Image = global::The_project.Properties.Resources.curve_arrow1;
-            this.pictureBoxArrow.Location = new System.Drawing.Point(376, 175);
+            this.pictureBoxArrow.Image = global::The_project.Properties.Resources.Untitled_design__3_1;
+            this.pictureBoxArrow.Location = new System.Drawing.Point(13, 82);
             this.pictureBoxArrow.Name = "pictureBoxArrow";
-            this.pictureBoxArrow.Size = new System.Drawing.Size(155, 183);
+            this.pictureBoxArrow.Size = new System.Drawing.Size(437, 383);
             this.pictureBoxArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxArrow.TabIndex = 8;
             this.pictureBoxArrow.TabStop = false;
-            // 
-            // lblClickToGenerate
-            // 
-            this.lblClickToGenerate.AutoSize = true;
-            this.lblClickToGenerate.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblClickToGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblClickToGenerate.Location = new System.Drawing.Point(32, 138);
-            this.lblClickToGenerate.Name = "lblClickToGenerate";
-            this.lblClickToGenerate.Size = new System.Drawing.Size(358, 44);
-            this.lblClickToGenerate.TabIndex = 7;
-            this.lblClickToGenerate.Text = "Click to generate";
             // 
             // pictureBoxImageRandom
             // 
@@ -590,9 +557,9 @@
             this.pnlByCh.Controls.Add(this.label2);
             this.pnlByCh.Controls.Add(this.textBoxDays);
             this.pnlByCh.Controls.Add(this.trackBarDays);
+            this.pnlByCh.Controls.Add(this.trackBarBudget);
             this.pnlByCh.Controls.Add(this.Budget);
             this.pnlByCh.Controls.Add(this.textBoxBudget);
-            this.pnlByCh.Controls.Add(this.trackBarBudget);
             this.pnlByCh.Location = new System.Drawing.Point(243, 15);
             this.pnlByCh.Name = "pnlByCh";
             this.pnlByCh.Size = new System.Drawing.Size(726, 588);
@@ -657,6 +624,17 @@
             this.trackBarDays.TabIndex = 3;
             this.trackBarDays.ValueChanged += new System.EventHandler(this.Form1_Load);
             // 
+            // trackBarBudget
+            // 
+            this.trackBarBudget.LargeChange = 100;
+            this.trackBarBudget.Location = new System.Drawing.Point(87, 168);
+            this.trackBarBudget.Maximum = 2000;
+            this.trackBarBudget.Name = "trackBarBudget";
+            this.trackBarBudget.Size = new System.Drawing.Size(281, 69);
+            this.trackBarBudget.SmallChange = 50;
+            this.trackBarBudget.TabIndex = 0;
+            this.trackBarBudget.ValueChanged += new System.EventHandler(this.Form1_Load);
+            // 
             // Budget
             // 
             this.Budget.AutoSize = true;
@@ -676,19 +654,9 @@
             this.textBoxBudget.TabIndex = 1;
             this.textBoxBudget.TextChanged += new System.EventHandler(this.textBoxBudget_TextChanged);
             // 
-            // trackBarBudget
-            // 
-            this.trackBarBudget.LargeChange = 100;
-            this.trackBarBudget.Location = new System.Drawing.Point(89, 150);
-            this.trackBarBudget.Maximum = 2000;
-            this.trackBarBudget.Name = "trackBarBudget";
-            this.trackBarBudget.Size = new System.Drawing.Size(281, 69);
-            this.trackBarBudget.SmallChange = 50;
-            this.trackBarBudget.TabIndex = 0;
-            this.trackBarBudget.ValueChanged += new System.EventHandler(this.Form1_Load);
-            // 
             // pnlByChoice2
             // 
+            this.pnlByChoice2.Controls.Add(this.btnFinish);
             this.pnlByChoice2.Controls.Add(this.checkBoxOutdoor);
             this.pnlByChoice2.Controls.Add(this.checkBoxSports);
             this.pnlByChoice2.Controls.Add(this.label5);
@@ -706,112 +674,148 @@
             this.pnlByChoice2.TabIndex = 10;
             this.pnlByChoice2.Visible = false;
             // 
+            // btnFinish
+            // 
+            this.btnFinish.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFinish.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnFinish.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnFinish.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFinish.Location = new System.Drawing.Point(497, 510);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(192, 78);
+            this.btnFinish.TabIndex = 11;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
             // checkBoxOutdoor
             // 
             this.checkBoxOutdoor.AutoSize = true;
-            this.checkBoxOutdoor.Location = new System.Drawing.Point(309, 382);
+            this.checkBoxOutdoor.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxOutdoor.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBoxOutdoor.Location = new System.Drawing.Point(340, 379);
             this.checkBoxOutdoor.Name = "checkBoxOutdoor";
-            this.checkBoxOutdoor.Size = new System.Drawing.Size(176, 29);
+            this.checkBoxOutdoor.Size = new System.Drawing.Size(220, 27);
             this.checkBoxOutdoor.TabIndex = 10;
             this.checkBoxOutdoor.Text = "outdoor activities";
-            this.checkBoxOutdoor.UseVisualStyleBackColor = true;
+            this.checkBoxOutdoor.UseVisualStyleBackColor = false;
             // 
             // checkBoxSports
             // 
             this.checkBoxSports.AutoSize = true;
+            this.checkBoxSports.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxSports.ForeColor = System.Drawing.SystemColors.Control;
             this.checkBoxSports.Location = new System.Drawing.Point(93, 377);
             this.checkBoxSports.Name = "checkBoxSports";
-            this.checkBoxSports.Size = new System.Drawing.Size(160, 29);
+            this.checkBoxSports.Size = new System.Drawing.Size(198, 27);
             this.checkBoxSports.TabIndex = 9;
             this.checkBoxSports.Text = "sports activities";
-            this.checkBoxSports.UseVisualStyleBackColor = true;
+            this.checkBoxSports.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(189, 383);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 25);
+            this.label5.Size = new System.Drawing.Size(0, 23);
             this.label5.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 237);
+            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(66, 247);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.Size = new System.Drawing.Size(139, 30);
             this.label4.TabIndex = 7;
             this.label4.Text = "activities";
             // 
             // radioButtonCold
             // 
             this.radioButtonCold.AutoSize = true;
-            this.radioButtonCold.Location = new System.Drawing.Point(177, 150);
+            this.radioButtonCold.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButtonCold.ForeColor = System.Drawing.SystemColors.Control;
+            this.radioButtonCold.Location = new System.Drawing.Point(177, 149);
             this.radioButtonCold.Name = "radioButtonCold";
-            this.radioButtonCold.Size = new System.Drawing.Size(71, 29);
+            this.radioButtonCold.Size = new System.Drawing.Size(82, 27);
             this.radioButtonCold.TabIndex = 6;
             this.radioButtonCold.Text = "cold";
-            this.radioButtonCold.UseVisualStyleBackColor = true;
+            this.radioButtonCold.UseVisualStyleBackColor = false;
             this.radioButtonCold.CheckedChanged += new System.EventHandler(this.Form1_Load);
             // 
             // radioButtonDoesntMatter
             // 
             this.radioButtonDoesntMatter.AutoSize = true;
-            this.radioButtonDoesntMatter.Location = new System.Drawing.Point(266, 153);
+            this.radioButtonDoesntMatter.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButtonDoesntMatter.ForeColor = System.Drawing.SystemColors.Control;
+            this.radioButtonDoesntMatter.Location = new System.Drawing.Point(266, 150);
             this.radioButtonDoesntMatter.Name = "radioButtonDoesntMatter";
-            this.radioButtonDoesntMatter.Size = new System.Drawing.Size(153, 29);
+            this.radioButtonDoesntMatter.Size = new System.Drawing.Size(181, 27);
             this.radioButtonDoesntMatter.TabIndex = 5;
             this.radioButtonDoesntMatter.Text = "doesn\'t matter";
-            this.radioButtonDoesntMatter.UseVisualStyleBackColor = true;
+            this.radioButtonDoesntMatter.UseVisualStyleBackColor = false;
             this.radioButtonDoesntMatter.CheckedChanged += new System.EventHandler(this.Form1_Load);
             // 
             // radioButtonWarm
             // 
             this.radioButtonWarm.AutoSize = true;
+            this.radioButtonWarm.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButtonWarm.ForeColor = System.Drawing.SystemColors.Control;
             this.radioButtonWarm.Location = new System.Drawing.Point(86, 148);
             this.radioButtonWarm.Name = "radioButtonWarm";
-            this.radioButtonWarm.Size = new System.Drawing.Size(81, 29);
+            this.radioButtonWarm.Size = new System.Drawing.Size(92, 27);
             this.radioButtonWarm.TabIndex = 4;
             this.radioButtonWarm.Text = "warm";
-            this.radioButtonWarm.UseVisualStyleBackColor = true;
+            this.radioButtonWarm.UseVisualStyleBackColor = false;
             this.radioButtonWarm.CheckedChanged += new System.EventHandler(this.Form1_Load);
             // 
             // checkBoxShopping
             // 
             this.checkBoxShopping.AutoSize = true;
-            this.checkBoxShopping.Location = new System.Drawing.Point(334, 293);
+            this.checkBoxShopping.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxShopping.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBoxShopping.Location = new System.Drawing.Point(411, 293);
             this.checkBoxShopping.Name = "checkBoxShopping";
-            this.checkBoxShopping.Size = new System.Drawing.Size(114, 29);
+            this.checkBoxShopping.Size = new System.Drawing.Size(126, 27);
             this.checkBoxShopping.TabIndex = 3;
             this.checkBoxShopping.Text = "shopping";
-            this.checkBoxShopping.UseVisualStyleBackColor = true;
+            this.checkBoxShopping.UseVisualStyleBackColor = false;
             // 
             // checkBoxSportsEvents
             // 
             this.checkBoxSportsEvents.AutoSize = true;
-            this.checkBoxSportsEvents.Location = new System.Drawing.Point(193, 292);
+            this.checkBoxSportsEvents.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxSportsEvents.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBoxSportsEvents.Location = new System.Drawing.Point(217, 292);
             this.checkBoxSportsEvents.Name = "checkBoxSportsEvents";
-            this.checkBoxSportsEvents.Size = new System.Drawing.Size(144, 29);
+            this.checkBoxSportsEvents.Size = new System.Drawing.Size(169, 27);
             this.checkBoxSportsEvents.TabIndex = 2;
             this.checkBoxSportsEvents.Text = "sports events";
-            this.checkBoxSportsEvents.UseVisualStyleBackColor = true;
+            this.checkBoxSportsEvents.UseVisualStyleBackColor = false;
             // 
             // checkBoxCulture
             // 
             this.checkBoxCulture.AutoSize = true;
+            this.checkBoxCulture.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxCulture.ForeColor = System.Drawing.SystemColors.Control;
             this.checkBoxCulture.Location = new System.Drawing.Point(89, 290);
             this.checkBoxCulture.Name = "checkBoxCulture";
-            this.checkBoxCulture.Size = new System.Drawing.Size(91, 29);
+            this.checkBoxCulture.Size = new System.Drawing.Size(116, 27);
             this.checkBoxCulture.TabIndex = 1;
             this.checkBoxCulture.Text = "culture";
-            this.checkBoxCulture.UseVisualStyleBackColor = true;
+            this.checkBoxCulture.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 102);
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(65, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.Size = new System.Drawing.Size(113, 30);
             this.label3.TabIndex = 0;
             this.label3.Text = "Climate";
             // 
@@ -821,7 +825,6 @@
             this.pnlContactUs.Controls.Add(this.btnSendEmail);
             this.pnlContactUs.Controls.Add(this.txtboxEmail);
             this.pnlContactUs.Controls.Add(this.label12);
-            this.pnlContactUs.Controls.Add(this.label11);
             this.pnlContactUs.Controls.Add(this.label10);
             this.pnlContactUs.Controls.Add(this.label9);
             this.pnlContactUs.Controls.Add(this.label8);
@@ -877,29 +880,16 @@
             this.label12.Location = new System.Drawing.Point(413, 493);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(302, 92);
+            this.label12.Size = new System.Drawing.Size(302, 69);
             this.label12.TabIndex = 7;
-            this.label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiyan Dimitrov first year\r" +
-    "\nVanessa Lombardo first year\r\n";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(26, 412);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(269, 23);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "vanessalombrd@gmail.com";
+            this.label12.Text = "This app was build by:\r\nLachezar Jordanov first year \r\nDiyan Dimitrov first year";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(26, 345);
+            this.label10.Location = new System.Drawing.Point(26, 375);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(292, 23);
@@ -1094,6 +1084,54 @@
             this.imageListRandom.ImageSize = new System.Drawing.Size(16, 16);
             this.imageListRandom.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // pnlReviews
+            // 
+            this.pnlReviews.Controls.Add(this.lblREview);
+            this.pnlReviews.Controls.Add(this.textBoxReview);
+            this.pnlReviews.Controls.Add(this.btnSendReview);
+            this.pnlReviews.Location = new System.Drawing.Point(235, 20);
+            this.pnlReviews.Name = "pnlReviews";
+            this.pnlReviews.Size = new System.Drawing.Size(742, 503);
+            this.pnlReviews.TabIndex = 13;
+            this.pnlReviews.Visible = false;
+            // 
+            // lblREview
+            // 
+            this.lblREview.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblREview.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblREview.Location = new System.Drawing.Point(395, 83);
+            this.lblREview.Name = "lblREview";
+            this.lblREview.Size = new System.Drawing.Size(338, 316);
+            this.lblREview.TabIndex = 2;
+            this.lblREview.Text = "No reviews yet";
+            // 
+            // textBoxReview
+            // 
+            this.textBoxReview.Location = new System.Drawing.Point(14, 65);
+            this.textBoxReview.Multiline = true;
+            this.textBoxReview.Name = "textBoxReview";
+            this.textBoxReview.PlaceholderText = "Write something";
+            this.textBoxReview.Size = new System.Drawing.Size(375, 334);
+            this.textBoxReview.TabIndex = 1;
+            // 
+            // btnSendReview
+            // 
+            this.btnSendReview.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSendReview.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnSendReview.Image = global::The_project.Properties.Resources.output_onlinegiftools;
+            this.btnSendReview.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSendReview.Location = new System.Drawing.Point(62, 441);
+            this.btnSendReview.Name = "btnSendReview";
+            this.btnSendReview.Size = new System.Drawing.Size(225, 57);
+            this.btnSendReview.TabIndex = 0;
+            this.btnSendReview.Text = "Send";
+            this.btnSendReview.UseVisualStyleBackColor = true;
+            this.btnSendReview.Click += new System.EventHandler(this.btnSendReview_Click);
+            // 
+            // timerR
+            // 
+            this.timerR.Tick += new System.EventHandler(this.timerR_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -1101,28 +1139,24 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1001, 663);
             this.ControlBox = false;
-            this.Controls.Add(this.pnlSearch);
-            this.Controls.Add(this.pnlByCh);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.pnlCompare);
-            this.Controls.Add(this.pnlRandom);
             this.Controls.Add(this.pnlContactUs);
+            this.Controls.Add(this.pnlRandom);
             this.Controls.Add(this.pnlByChoice2);
+            this.Controls.Add(this.pnlByCh);
+            this.Controls.Add(this.pnlReviews);
+            this.Controls.Add(this.pnlSearch);
+            this.Controls.Add(this.pnlCompare);
             this.Controls.Add(this.sidePanel);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Tripido";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.Text = " ";
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProfile)).EndInit();
             this.sidePanel.ResumeLayout(false);
             this.sidePanel.PerformLayout();
             this.pnlRandom.ResumeLayout(false);
-            this.pnlRandom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageRandom)).EndInit();
             this.pnlCompare.ResumeLayout(false);
@@ -1140,17 +1174,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchThirdImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchSecondImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
+            this.pnlReviews.ResumeLayout(false);
+            this.pnlReviews.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Panel panel1;
         private Label label1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
         private Button button1;
         private Button btnSearch;
         private Button btnRandom;
@@ -1196,7 +1228,6 @@
         private Panel pnlContactUs;
         private Button btnBackToMenuContactUs;
         private Label label12;
-        private Label label11;
         private Label label10;
         private Label label9;
         private Label label8;
@@ -1218,11 +1249,17 @@
         private PictureBox pictureBoxImageRandom;
         private ImageList imageListRandom;
         private PictureBox pictureBoxArrow;
-        private Label lblClickToGenerate;
         private Label lblSearchedCountry;
         private PictureBox pictureBoxForSeacrhedCountry;
         private Label lblIfEquals;
         private Label lblSecondC;
         private Label lblOneC;
+        private Panel pnlReviews;
+        private Label lblREview;
+        private TextBox textBoxReview;
+        private Button btnSendReview;
+        private System.Windows.Forms.Timer timerR;
+        private Button btnFinish;
+        private Label lblCopyright;
     }
 }

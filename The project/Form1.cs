@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Runtime.Intrinsics.X86;
 using System.Numerics;
+using System;
 
 namespace The_project
 {
@@ -23,18 +24,26 @@ namespace The_project
             labelName.Text = userName;
             labelName.ForeColor = Color.White;
             //akop iskash da dobavish nov button po vreme na izpylnenie na programata i realno da mu dobavish eventa
-            string path = @"C:\Users\dimit\OneDrive\Работен плот\The-project-TU\dataForCountry.txt";
-            string pathImage = @"C:\Users\dimit\OneDrive\Работен плот\The-project-TU\photoss.txt";
+            string path = @"C:\Users\dimit\OneDrive\Работен плот\project\The-project-TU\dataForCountry.txt";
             dataForCountry = File.ReadAllLines(path).ToArray();
+            reviews = File.ReadAllLines(pathReview).ToList();
             //imageForCountry=File.ReadAllLines(pathImage).ToArray();
             imageForCountry = Directory.GetFiles(@"C:\Users\dimit\OneDrive\Работен плот\Durjavi", "*.png");
         }
+        string pathReview = @"C:\Users\dimit\OneDrive\Работен плот\project\The-project-TU\reviews.txt";
+        List<string> reviews = new List<string>();
         String[] dataForCountry = new String[21];
         String[] imageForCountry = new String[21];
         String[] nameCountry = {"Austria","Bulgaria", "Czechia","England", "Finland","France" ,"Germany", "Greece","Ireland",
                                 "Italy","Macedonia",
                                 "Poland", "Portugal","Romania","Serbia", "Slovakia","Spain","Switzerland","Turkey","Ukraine" };
-        int[] prices = { 85,130,122,173,124,156,164,93,146,129,79,113,99,103,82,119,134,143,65,69};
+        int[] prices = {130,85,122,173,124,156,164,93,146,129,79,113,99,103,82,119,134,143,65,69};
+        String[] activities = { "swimming","snowboard","skiing","surfing","skiing","snowboard",
+            "skiing","swimming","surfing","skiing","skiing","hiking","surfing","snowboard","skiing",
+            "skiing","skiing","skiing","swimming","swimming" };
+        String[] mountainOrSea = { "both","both","mountain","mountain","mountain","sea","nmountain",
+            "sea","mountain","sea","mountain","mountain","mountain","mountain","mountain","mountain",
+                "both"," mountain","sea","mountain" };
         private void iconProfile_Click(object sender, EventArgs e)
         {
             iconProfile.BackColor = Color.Transparent;
@@ -112,8 +121,14 @@ namespace The_project
 
         private void btnContactUs_Click(object sender, EventArgs e)
         {
+            pnlRandom.Visible = false;
+            pnlSearch.Visible = false;
+            pnlCompare.Visible = false;
+            pnlByCh.Visible = false;
+            pnlByChoice2.Visible = false;
             pnlContactUs.Visible = true;
             pnlMenu.Hide();
+            pnlReviews.Visible = false;
             pnlContactUs.Show();
         }
 
@@ -159,7 +174,6 @@ namespace The_project
             randomAll = number;
             lblRandom.Text = dataForCountry[number].ToString();
             lblRandom.Visible = true;
-            lblClickToGenerate.Visible = false;
             pictureBoxArrow.Visible = false;
             pictureBoxImageRandom.Visible = true;
             try
@@ -180,7 +194,6 @@ namespace The_project
             pnlRandom.Hide();
             lblRandom.Visible = false;
             pictureBoxArrow.Visible=true;
-            lblClickToGenerate.Visible = true;
             pictureBoxImageRandom.Visible = false;
             pnlMenu.Show();
         }
@@ -257,8 +270,15 @@ namespace The_project
             {
                 checkBoxSports.Text = "Skiing/Snowboarding";
             }
+            else if (radioButtonWarm.Checked == true)
+            {
+                checkBoxSports.Text = "Swimming/Surfing";
+            }
+            else if (radioButtonDoesntMatter.Checked == true)
+            {
+                checkBoxSports.Text = "Sports activities";
+            }
         }
-        int savedIndex = 0;
         private void textBoxBudget_TextChanged(object sender, EventArgs e)
         {
             String temp = "";
@@ -314,7 +334,8 @@ namespace The_project
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
-        { 
+        {
+            pnlReviews.Visible = false;
             pnlByCh.Hide();
             pnlByChoice2.Hide();
             pnlCompare.Hide();
@@ -323,7 +344,6 @@ namespace The_project
             pnlRandom.Hide();
             pnlSearch.Hide();
             pnlMenu.Visible = true;
-            lblClickToGenerate.Visible = true;
             pictureBoxArrow.Visible = true;
             pictureBoxImageRandom.Visible = false;
             lblRandom.Visible = false;
@@ -343,6 +363,166 @@ namespace The_project
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            pnlRandom.Visible = false;
+            pnlSearch.Visible = false;
+            pnlCompare.Visible = false;
+            pnlByCh.Visible = false;
+            pnlByChoice2.Visible = false;
+            pnlContactUs.Visible = false;
+            pnlMenu.Visible = false;
+            pnlReviews.Visible = true;
+            timerR.Start();
+
+        }
+
+        private void btnSendReview_Click(object sender, EventArgs e)
+        {
+            if (textBoxReview.Text != "")
+            {
+                reviews.Add("\"" + textBoxReview.Text + "\" - " + labelName.Text.ToString());
+                File.WriteAllLines(pathReview, reviews);
+                MessageBox.Show("Email has been send");
+                textBoxReview.Clear();
+            }
+            else
+            {
+                MessageBox.Show("It can not be empty!");
+            }
+             
+        }
+        int val = 0;
+        private void timerR_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                val++;
+                if (val % 100 == 0 || val == 1)
+                {
+                    Random random = new Random();
+                    int number = random.Next(0, reviews.Count - 1);
+                    lblREview.Text = reviews[number].ToString();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        int index = 0, indexWarm = 0,indexCold=0;
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            int budget = trackBarBudget.Value;
+            int days = trackBarDays.Value;
+            String wheather;
+            if (radioButtonCold.Checked == true)
+            {
+                wheather = radioButtonCold.Text.ToString();
+                if (indexCold < 20)
+                {
+                    for (int i = indexCold; i < 20; i++)
+                    {
+                        if (activities[i].Equals("snowboard") || activities[i].Equals("skiing"))
+                        {
+                            if (days * prices[i] <= budget)
+                            {
+                                if (mountainOrSea[i] == "both")
+                                {
+                                    indexCold++;
+                                    MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the sea or to the mounatin" +
+                                        ". The money that you need are " + (days * prices[i]).ToString() + " lv.");
+                                    break;
+                                }
+                                else
+                                {
+                                    indexCold++;
+                                    MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the " + mountainOrSea[i].ToString() +
+                                        ". The money that you need are " + (days * prices[i]).ToString() + "lv.");
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    btnDashboard_Click(sender, e);
+
+                }
+            }
+            else if (radioButtonWarm.Checked)
+            {
+                wheather = radioButtonWarm.Text.ToString();
+                if (indexWarm < 20)
+                {
+                    for (int i = indexWarm; i < 20; i++)
+                    {
+                        if (activities[i] == "swimming" || activities[i] == "surfing")
+                        {
+                            if (days * prices[i] <= budget)
+                            {
+                                if (mountainOrSea[i] == "both")
+                                {
+                                    indexWarm++;
+                                    MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the sea or to the mounatin" +
+                                        ". The money that you need are " + (days * prices[i]).ToString() + "lv.");
+                                    break;
+                                }
+                                else
+                                {
+                                    indexWarm++;
+                                    MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the " + mountainOrSea[i].ToString() +
+                                        ". The money that you need are " + (days * prices[i]).ToString() + "lv.");
+
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    btnDashboard_Click(sender, e);
+
+                }
+
+            }
+            else if (radioButtonDoesntMatter.Checked)
+            {
+                wheather = radioButtonDoesntMatter.Text.ToString();
+                if (index < 20)
+                {
+                    for (int i = index; i < 20; i++)
+                    {
+                        if (days * prices[i] <= budget)
+                        {
+                            if (mountainOrSea[i] == "both")
+                            {
+                                index++;
+                                MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the sea or to the mounatin" +
+                                    ". The money that you need are " + (days * prices[i]).ToString() + "lv.");
+
+                                break;
+                            }
+                            else
+                            {
+                                index++;
+                                MessageBox.Show("The perfect country is " + nameCountry[i].ToString() + "! You can go to the " + mountainOrSea[i].ToString() +
+                                    ". The money that you need are " + (days * prices[i]).ToString() + "lv.");
+
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    btnDashboard_Click(sender, e);
+                }
+            }
         }
     }
 }

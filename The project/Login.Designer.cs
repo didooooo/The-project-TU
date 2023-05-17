@@ -62,7 +62,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
             this.btnLogin.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnLogin.Image = global::The_project.Properties.Resources.output_onlinegiftools;
@@ -77,7 +77,7 @@
             // 
             // btnGuest
             // 
-            this.btnGuest.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuest.BackColor = System.Drawing.SystemColors.Control;
             this.btnGuest.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGuest.ForeColor = System.Drawing.Color.White;
             this.btnGuest.Image = global::The_project.Properties.Resources.output_onlinegiftools;
@@ -122,6 +122,7 @@
             // 
             this.textBoxpasswordL.Location = new System.Drawing.Point(293, 261);
             this.textBoxpasswordL.Name = "textBoxpasswordL";
+            this.textBoxpasswordL.PasswordChar = '$';
             this.textBoxpasswordL.PlaceholderText = "Password";
             this.textBoxpasswordL.Size = new System.Drawing.Size(271, 31);
             this.textBoxpasswordL.TabIndex = 5;
@@ -183,6 +184,7 @@
             // 
             this.textBoxConfirmPass.Location = new System.Drawing.Point(280, 368);
             this.textBoxConfirmPass.Name = "textBoxConfirmPass";
+            this.textBoxConfirmPass.PasswordChar = '$';
             this.textBoxConfirmPass.PlaceholderText = "Confirm password";
             this.textBoxConfirmPass.Size = new System.Drawing.Size(271, 31);
             this.textBoxConfirmPass.TabIndex = 8;
@@ -207,6 +209,7 @@
             // 
             this.textBoxpasswordS.Location = new System.Drawing.Point(280, 313);
             this.textBoxpasswordS.Name = "textBoxpasswordS";
+            this.textBoxpasswordS.PasswordChar = '$';
             this.textBoxpasswordS.PlaceholderText = "Password";
             this.textBoxpasswordS.Size = new System.Drawing.Size(271, 31);
             this.textBoxpasswordS.TabIndex = 5;
@@ -246,9 +249,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 664);
-            this.Controls.Add(this.pnlChoose);
             this.Controls.Add(this.signUpPanel);
             this.Controls.Add(this.loginPanel);
+            this.Controls.Add(this.pnlChoose);
             this.Name = "Login";
             this.Text = "Login";
             this.pnlChoose.ResumeLayout(false);
